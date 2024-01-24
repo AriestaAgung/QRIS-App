@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		EBD7FBC52B616A6800C850BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBC42B616A6800C850BA /* AppDelegate.swift */; };
 		EBD7FBC72B616A6800C850BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBC62B616A6800C850BA /* SceneDelegate.swift */; };
-		EBD7FBC92B616A6800C850BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBC82B616A6800C850BA /* ViewController.swift */; };
-		EBD7FBCC2B616A6800C850BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7FBCA2B616A6800C850BA /* Main.storyboard */; };
 		EBD7FBCE2B616A6A00C850BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD7FBCD2B616A6A00C850BA /* Assets.xcassets */; };
 		EBD7FBD12B616A6A00C850BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7FBCF2B616A6A00C850BA /* LaunchScreen.storyboard */; };
 		EBD7FBDC2B616A6A00C850BA /* QRIS_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBDB2B616A6A00C850BA /* QRIS_AppTests.swift */; };
 		EBD7FBE62B616A6A00C850BA /* QRIS_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBE52B616A6A00C850BA /* QRIS_AppUITests.swift */; };
 		EBD7FBE82B616A6A00C850BA /* QRIS_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBE72B616A6A00C850BA /* QRIS_AppUITestsLaunchTests.swift */; };
+		EBD7FBF92B61722100C850BA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBF72B61722100C850BA /* HomeViewController.swift */; };
+		EBD7FBFA2B61722100C850BA /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD7FBF82B61722100C850BA /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 		EBD7FBC12B616A6800C850BA /* QRIS App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QRIS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD7FBC42B616A6800C850BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD7FBC62B616A6800C850BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EBD7FBC82B616A6800C850BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EBD7FBCB2B616A6800C850BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBD7FBCD2B616A6A00C850BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBD7FBD02B616A6A00C850BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBD7FBD22B616A6A00C850BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		EBD7FBE12B616A6A00C850BA /* QRIS AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QRIS AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD7FBE52B616A6A00C850BA /* QRIS_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRIS_AppUITests.swift; sourceTree = "<group>"; };
 		EBD7FBE72B616A6A00C850BA /* QRIS_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRIS_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EBD7FBF72B61722100C850BA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EBD7FBF82B61722100C850BA /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +99,8 @@
 		EBD7FBC32B616A6800C850BA /* QRIS App */ = {
 			isa = PBXGroup;
 			children = (
-				EBD7FBC42B616A6800C850BA /* AppDelegate.swift */,
-				EBD7FBC62B616A6800C850BA /* SceneDelegate.swift */,
-				EBD7FBC82B616A6800C850BA /* ViewController.swift */,
-				EBD7FBCA2B616A6800C850BA /* Main.storyboard */,
-				EBD7FBCD2B616A6A00C850BA /* Assets.xcassets */,
-				EBD7FBCF2B616A6A00C850BA /* LaunchScreen.storyboard */,
-				EBD7FBD22B616A6A00C850BA /* Info.plist */,
+				EBD7FBF52B6171F000C850BA /* Features */,
+				EBD7FBF42B61719500C850BA /* App */,
 			);
 			path = "QRIS App";
 			sourceTree = "<group>";
@@ -125,6 +120,35 @@
 				EBD7FBE72B616A6A00C850BA /* QRIS_AppUITestsLaunchTests.swift */,
 			);
 			path = "QRIS AppUITests";
+			sourceTree = "<group>";
+		};
+		EBD7FBF42B61719500C850BA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7FBC42B616A6800C850BA /* AppDelegate.swift */,
+				EBD7FBC62B616A6800C850BA /* SceneDelegate.swift */,
+				EBD7FBCD2B616A6A00C850BA /* Assets.xcassets */,
+				EBD7FBCF2B616A6A00C850BA /* LaunchScreen.storyboard */,
+				EBD7FBD22B616A6A00C850BA /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EBD7FBF52B6171F000C850BA /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7FBF62B61720500C850BA /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		EBD7FBF62B61720500C850BA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7FBF72B61722100C850BA /* HomeViewController.swift */,
+				EBD7FBF82B61722100C850BA /* HomeViewController.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +257,7 @@
 			files = (
 				EBD7FBD12B616A6A00C850BA /* LaunchScreen.storyboard in Resources */,
 				EBD7FBCE2B616A6A00C850BA /* Assets.xcassets in Resources */,
-				EBD7FBCC2B616A6800C850BA /* Main.storyboard in Resources */,
+				EBD7FBFA2B61722100C850BA /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +282,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBD7FBC92B616A6800C850BA /* ViewController.swift in Sources */,
 				EBD7FBC52B616A6800C850BA /* AppDelegate.swift in Sources */,
 				EBD7FBC72B616A6800C850BA /* SceneDelegate.swift in Sources */,
+				EBD7FBF92B61722100C850BA /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +321,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EBD7FBCA2B616A6800C850BA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EBD7FBCB2B616A6800C850BA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EBD7FBCF2B616A6A00C850BA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -443,11 +459,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "QRIS App/Info.plist";
+				INFOPLIST_FILE = "QRIS App/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -471,11 +487,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "QRIS App/Info.plist";
+				INFOPLIST_FILE = "QRIS App/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -499,6 +515,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -519,6 +536,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -538,6 +556,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dcd.QRIS-AppUITests";
@@ -556,6 +575,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dcd.QRIS-AppUITests";
