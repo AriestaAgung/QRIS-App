@@ -20,7 +20,8 @@ class HomePresenter: HomePresenterProtocol {
     }
     
     func fetchBalance() {
-        <#code#>
+        
+        
     }
     
     func routeToQris() {

@@ -18,6 +18,11 @@
 		EBD7FBFA2B61722100C850BA /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD7FBF82B61722100C850BA /* HomeViewController.xib */; };
 		EBD7FBFD2B61762700C850BA /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBFC2B61762600C850BA /* HomePresenter.swift */; };
 		EBD7FBFF2B61769500C850BA /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBFE2B61769500C850BA /* HomeInteractor.swift */; };
+		EBD7FC022B6178AF00C850BA /* UserDefaultsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC012B6178AF00C850BA /* UserDefaultsUtils.swift */; };
+		EBD7FC062B617BBF00C850BA /* BalanceDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC042B617BBF00C850BA /* BalanceDataModel.xcdatamodeld */; };
+		EBD7FC082B617C2E00C850BA /* BalanceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC072B617C2E00C850BA /* BalanceProvider.swift */; };
+		EBD7FC0A2B617EC200C850BA /* BalanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC092B617EC200C850BA /* BalanceModel.swift */; };
+		EBD7FC0C2B617FFE00C850BA /* BalanceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC0B2B617FFE00C850BA /* BalanceInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		EBD7FBF82B61722100C850BA /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		EBD7FBFC2B61762600C850BA /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		EBD7FBFE2B61769500C850BA /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		EBD7FC012B6178AF00C850BA /* UserDefaultsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtils.swift; sourceTree = "<group>"; };
+		EBD7FC052B617BBF00C850BA /* BalanceDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BalanceDataModel.xcdatamodel; sourceTree = "<group>"; };
+		EBD7FC072B617C2E00C850BA /* BalanceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceProvider.swift; sourceTree = "<group>"; };
+		EBD7FC092B617EC200C850BA /* BalanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceModel.swift; sourceTree = "<group>"; };
+		EBD7FC0B2B617FFE00C850BA /* BalanceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,7 @@
 		EBD7FBC32B616A6800C850BA /* QRIS App */ = {
 			isa = PBXGroup;
 			children = (
+				EBD7FC002B6176DF00C850BA /* Utils */,
 				EBD7FBF52B6171F000C850BA /* Features */,
 				EBD7FBF42B61719500C850BA /* App */,
 			);
@@ -141,6 +152,7 @@
 		EBD7FBF52B6171F000C850BA /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				EBD7FC032B617BAD00C850BA /* Balance */,
 				EBD7FBFB2B61745400C850BA /* ScanQR */,
 				EBD7FBF62B61720500C850BA /* Home */,
 			);
@@ -163,6 +175,25 @@
 			children = (
 			);
 			path = ScanQR;
+			sourceTree = "<group>";
+		};
+		EBD7FC002B6176DF00C850BA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7FC012B6178AF00C850BA /* UserDefaultsUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EBD7FC032B617BAD00C850BA /* Balance */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7FC042B617BBF00C850BA /* BalanceDataModel.xcdatamodeld */,
+				EBD7FC072B617C2E00C850BA /* BalanceProvider.swift */,
+				EBD7FC092B617EC200C850BA /* BalanceModel.swift */,
+				EBD7FC0B2B617FFE00C850BA /* BalanceInteractor.swift */,
+			);
+			path = Balance;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,7 +328,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBD7FBC52B616A6800C850BA /* AppDelegate.swift in Sources */,
+				EBD7FC082B617C2E00C850BA /* BalanceProvider.swift in Sources */,
 				EBD7FBC72B616A6800C850BA /* SceneDelegate.swift in Sources */,
+				EBD7FC022B6178AF00C850BA /* UserDefaultsUtils.swift in Sources */,
+				EBD7FC0A2B617EC200C850BA /* BalanceModel.swift in Sources */,
+				EBD7FC0C2B617FFE00C850BA /* BalanceInteractor.swift in Sources */,
+				EBD7FC062B617BBF00C850BA /* BalanceDataModel.xcdatamodeld in Sources */,
 				EBD7FBF92B61722100C850BA /* HomeViewController.swift in Sources */,
 				EBD7FBFF2B61769500C850BA /* HomeInteractor.swift in Sources */,
 				EBD7FBFD2B61762700C850BA /* HomePresenter.swift in Sources */,
@@ -643,6 +679,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EBD7FC042B617BBF00C850BA /* BalanceDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EBD7FC052B617BBF00C850BA /* BalanceDataModel.xcdatamodel */,
+			);
+			currentVersion = EBD7FC052B617BBF00C850BA /* BalanceDataModel.xcdatamodel */;
+			path = BalanceDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EBD7FBB92B616A6800C850BA /* Project object */;
 }

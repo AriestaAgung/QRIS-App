@@ -11,3 +11,5 @@ protocol HomeUseCase {
     func fetchBalance()
     func updateBalance()
 }
+
+
