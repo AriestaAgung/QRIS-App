@@ -16,6 +16,8 @@
 		EBD7FBE82B616A6A00C850BA /* QRIS_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBE72B616A6A00C850BA /* QRIS_AppUITestsLaunchTests.swift */; };
 		EBD7FBF92B61722100C850BA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBF72B61722100C850BA /* HomeViewController.swift */; };
 		EBD7FBFA2B61722100C850BA /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD7FBF82B61722100C850BA /* HomeViewController.xib */; };
+		EBD7FBFD2B61762700C850BA /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBFC2B61762600C850BA /* HomePresenter.swift */; };
+		EBD7FBFF2B61769500C850BA /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBFE2B61769500C850BA /* HomeInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		EBD7FBE72B616A6A00C850BA /* QRIS_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRIS_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EBD7FBF72B61722100C850BA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EBD7FBF82B61722100C850BA /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		EBD7FBFC2B61762600C850BA /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		EBD7FBFE2B61769500C850BA /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,7 @@
 		EBD7FBF52B6171F000C850BA /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				EBD7FBFB2B61745400C850BA /* ScanQR */,
 				EBD7FBF62B61720500C850BA /* Home */,
 			);
 			path = Features;
@@ -147,8 +152,17 @@
 			children = (
 				EBD7FBF72B61722100C850BA /* HomeViewController.swift */,
 				EBD7FBF82B61722100C850BA /* HomeViewController.xib */,
+				EBD7FBFC2B61762600C850BA /* HomePresenter.swift */,
+				EBD7FBFE2B61769500C850BA /* HomeInteractor.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		EBD7FBFB2B61745400C850BA /* ScanQR */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ScanQR;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +299,8 @@
 				EBD7FBC52B616A6800C850BA /* AppDelegate.swift in Sources */,
 				EBD7FBC72B616A6800C850BA /* SceneDelegate.swift in Sources */,
 				EBD7FBF92B61722100C850BA /* HomeViewController.swift in Sources */,
+				EBD7FBFF2B61769500C850BA /* HomeInteractor.swift in Sources */,
+				EBD7FBFD2B61762700C850BA /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
