@@ -29,7 +29,6 @@ extension TransactionInteractor {
                         let merchant = item.value(forKeyPath: "merchant") as? String
                         let amount = item.value(forKeyPath: "amount") as? Double
                         let transaction = TransactionModel(
-                            id: id,
                             transactionId: transactionId,
                             merchantName: merchant,
                             amount: amount
@@ -51,7 +50,9 @@ extension TransactionInteractor {
             if let entity = NSEntityDescription.entity(forEntityName: self.entityName, in: taskContext) {
                 let transaction = NSManagedObject(entity: entity, insertInto: taskContext)
                 DispatchQueue.main.async {
-                    transaction.setValue(data.id, forKeyPath: "id")
+                    self.getTransaction { datas in
+                        transaction.setValue(datas.count+1, forKeyPath: "id")
+                    }
                     transaction.setValue(data.transactionId, forKeyPath: "transactionId")
                     transaction.setValue(data.merchantName, forKeyPath: "merchant")
                     transaction.setValue(data.amount, forKeyPath: "amount")
@@ -60,7 +61,7 @@ extension TransactionInteractor {
                         self.getTransaction { transactions in
                             completion(transactions)
                         }
-                    } catch let err {
+                    } catch {
                         completion([])
                     }
                 }

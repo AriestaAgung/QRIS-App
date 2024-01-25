@@ -11,6 +11,8 @@ class PaymentRouter {
     static let shared = PaymentRouter()
     
     func goToHome(nav: UINavigationController) {
-        nav.popToRootViewController(animated: true)
+        DispatchQueue.main.async {
+            nav.popToRootViewController(animated: true)            
+        }
     }
 }

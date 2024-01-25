@@ -8,7 +8,6 @@
 import Foundation
 
 struct TransactionModel {
-    let id: Int32?
     let transactionId: String?
     let merchantName: String?
     let amount: Double?

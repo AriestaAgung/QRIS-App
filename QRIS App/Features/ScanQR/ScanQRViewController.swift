@@ -95,7 +95,7 @@ class ScanQRViewController: UIViewController {
     private func didReadQR(value: String) {
         print(value)
         let arr = value.components(separatedBy: ".")
-        var model = PaymentModel(id: arr.first, bankOrigin: arr[1], merchantName: arr[2], amount: Double(arr[3]))
+        let model = PaymentModel(id: arr.first, bankOrigin: arr[1], merchantName: arr[2], amount: Double(arr[3]))
         
         presenter?.goToPayment(nav: self.navigationController!, data: model)
     }
