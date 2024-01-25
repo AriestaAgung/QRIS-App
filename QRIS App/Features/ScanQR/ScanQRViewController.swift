@@ -29,7 +29,9 @@ class ScanQRViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if session?.isRunning == false {
-            session.startRunning()
+            DispatchQueue.global().async {
+                self.session.startRunning()                
+            }
         }
     }
     
@@ -84,7 +86,7 @@ class ScanQRViewController: UIViewController {
         preview.frame = view.layer.bounds
         preview.videoGravity = .resizeAspectFill
         view.layer.addSublayer(preview)
-        DispatchQueue.main.async {
+        DispatchQueue.global().async {
             self.session.startRunning()
         }
 
