@@ -26,6 +26,8 @@
 		EBD7FC0E2B6183E100C850BA /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC0D2B6183E100C850BA /* HomeRouter.swift */; };
 		EBD7FC112B623A6000C850BA /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC0F2B623A6000C850BA /* ScanQRViewController.swift */; };
 		EBD7FC122B623A6000C850BA /* ScanQRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD7FC102B623A6000C850BA /* ScanQRViewController.xib */; };
+		EBD7FC152B623DAB00C850BA /* ScanQRPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC142B623DAB00C850BA /* ScanQRPresenter.swift */; };
+		EBD7FC172B623DB400C850BA /* ScanQRRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC162B623DB400C850BA /* ScanQRRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		EBD7FC0D2B6183E100C850BA /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		EBD7FC0F2B623A6000C850BA /* ScanQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
 		EBD7FC102B623A6000C850BA /* ScanQRViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanQRViewController.xib; sourceTree = "<group>"; };
+		EBD7FC142B623DAB00C850BA /* ScanQRPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRPresenter.swift; sourceTree = "<group>"; };
+		EBD7FC162B623DB400C850BA /* ScanQRRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,8 @@
 			children = (
 				EBD7FC0F2B623A6000C850BA /* ScanQRViewController.swift */,
 				EBD7FC102B623A6000C850BA /* ScanQRViewController.xib */,
+				EBD7FC142B623DAB00C850BA /* ScanQRPresenter.swift */,
+				EBD7FC162B623DB400C850BA /* ScanQRRouter.swift */,
 			);
 			path = ScanQR;
 			sourceTree = "<group>";
@@ -350,10 +356,12 @@
 				EBD7FBC72B616A6800C850BA /* SceneDelegate.swift in Sources */,
 				EBD7FC022B6178AF00C850BA /* UserDefaultsUtils.swift in Sources */,
 				EBD7FC0A2B617EC200C850BA /* BalanceModel.swift in Sources */,
+				EBD7FC152B623DAB00C850BA /* ScanQRPresenter.swift in Sources */,
 				EBD7FC0C2B617FFE00C850BA /* BalanceInteractor.swift in Sources */,
 				EBD7FC062B617BBF00C850BA /* BalanceDataModel.xcdatamodeld in Sources */,
 				EBD7FBF92B61722100C850BA /* HomeViewController.swift in Sources */,
 				EBD7FC112B623A6000C850BA /* ScanQRViewController.swift in Sources */,
+				EBD7FC172B623DB400C850BA /* ScanQRRouter.swift in Sources */,
 				EBD7FBFF2B61769500C850BA /* HomeInteractor.swift in Sources */,
 				EBD7FBFD2B61762700C850BA /* HomePresenter.swift in Sources */,
 				EBD7FC0E2B6183E100C850BA /* HomeRouter.swift in Sources */,
@@ -534,8 +542,10 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "QRIS App/App/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow QRIS App to use camera to scan QR?";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -562,8 +572,10 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "QRIS App/App/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow QRIS App to use camera to scan QR?";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

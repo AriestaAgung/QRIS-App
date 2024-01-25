@@ -17,7 +17,8 @@ class HomeViewController: UIViewController {
     
     private var presenter: HomePresenter?
     private var isLoadingBalance = true
-    private var buttonAction: ((Bool) -> Void)?
+    private var BalanceAction: ((Bool) -> Void)?
+    private var scanAction: (() -> Void)?
     init(presenter: HomePresenter) {
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
@@ -34,7 +35,7 @@ class HomeViewController: UIViewController {
     
     private func setupUI() {
         title = "Home"
-        buttonAction = { isUpdate in
+        BalanceAction = { isUpdate in
             self.isLoadingBalance = true
             if isUpdate {
                 self.updateBalance()
@@ -43,8 +44,12 @@ class HomeViewController: UIViewController {
             }
             
         }
+        scanAction = {
+            self.presenter?.routeToQris(nav: self.navigationController!)
+        }
         checkFirstBalance()
         addBalanceButton.addTarget(self, action: #selector(updateBalanceAction), for: .touchUpInside)
+        scanQrisButton.addTarget(self, action: #selector(scanQRAction), for: .touchUpInside)
     }
     
     private func checkFirstBalance() {
@@ -82,12 +87,16 @@ class HomeViewController: UIViewController {
         }
     }
     
+    @objc private func scanQRAction() {
+        scanAction?()
+    }
+    
     @objc private func addBalanceAction() {
-        buttonAction?(false)
+        BalanceAction?(false)
     }
     
     @objc private func updateBalanceAction() {
-        buttonAction?(true)
+        BalanceAction?(true)
     }
     
 }

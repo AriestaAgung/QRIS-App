@@ -6,12 +6,12 @@
 //
 
 import Foundation
-
+import UIKit
 protocol HomePresenterProtocol {
     func fetchBalance(completion: @escaping (BalanceModel?) -> Void)
     func addBalance(completion: @escaping (BalanceModel?) -> Void)
     func updateBalance(completion: @escaping (BalanceModel?) -> Void)
-    func routeToQris()
+    func routeToQris(nav: UINavigationController)
     func routeToPaymentHistory()
 }
 
@@ -53,8 +53,8 @@ class HomePresenter: HomePresenterProtocol {
         }
     }
     
-    func routeToQris() {
-        
+    func routeToQris(nav: UINavigationController) {
+        router?.goToQRScanner(nav: nav)
     }
     
     func routeToPaymentHistory() {

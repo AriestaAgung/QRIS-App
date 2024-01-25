@@ -9,29 +9,40 @@ import UIKit
 import AVFoundation
 
 class ScanQRViewController: UIViewController {
-    var session: AVCaptureSession!
-    var preview: AVCaptureVideoPreviewLayer!
+    private var session: AVCaptureSession!
+    private var preview: AVCaptureVideoPreviewLayer!
+    private var presenter: ScanQRPresenter?
+    init(presenter: ScanQRPresenter) {
+        self.presenter = presenter
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupUI()
         
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if session.isRunning == false {
+        if session?.isRunning == false {
             session.startRunning()
         }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        if session.isRunning == true {
+        if session?.isRunning == true {
             session.stopRunning()
         }
     }
     
     private func setupUI() {
         view.backgroundColor = .black
+        setupCapture()
     }
     
     private func setupCapture() {
@@ -73,13 +84,15 @@ class ScanQRViewController: UIViewController {
         preview.frame = view.layer.bounds
         preview.videoGravity = .resizeAspectFill
         view.layer.addSublayer(preview)
-        
-        session.startRunning()
+        DispatchQueue.main.async {
+            self.session.startRunning()
+        }
 
     }
     
     private func didReadQR(value: String) {
         print(value)
+        dismiss(animated: true)
     }
 
 }
@@ -90,11 +103,13 @@ extension ScanQRViewController: AVCaptureMetadataOutputObjectsDelegate {
     }
     
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+        session.stopRunning()
         if let metadataObject = metadataObjects.first {
             guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
             guard let stringValue = readableObject.stringValue else { return }
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
             didReadQR(value: stringValue)
         }
+        dismiss(animated: true)
     }
 }
