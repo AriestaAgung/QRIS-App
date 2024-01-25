@@ -60,7 +60,7 @@ extension BalanceInteractor {
         }
     }
     
-    func updateBalance(_ amount: Double, completion: @escaping (BalanceModel?) -> Void) {
+    func updateBalance(_ amount: Double, isMinus: Bool = false, completion: @escaping (BalanceModel?) -> Void) {
         guard let taskContext = taskContext else {return}
         taskContext.perform {
             let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: self.entityName)
@@ -69,7 +69,13 @@ extension BalanceInteractor {
                 DispatchQueue.main.async {
                     
                     let oldBal = balance.balance
-                    let newAmount = amount + (oldBal)
+                    var newAmount = 0.0
+                    if isMinus {
+                        newAmount = (oldBal) - amount
+                    } else {
+                        newAmount = amount + (oldBal)
+                    }
+                    print(newAmount)
                     balance.setValue(newAmount, forKeyPath: "balance")
                     do {
                         try taskContext.save()

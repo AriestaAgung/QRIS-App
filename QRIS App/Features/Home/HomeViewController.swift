@@ -33,6 +33,11 @@ class HomeViewController: UIViewController {
         setupUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        checkFirstBalance()
+    }
+    
     private func setupUI() {
         title = "Home"
         BalanceAction = { isUpdate in
@@ -47,7 +52,7 @@ class HomeViewController: UIViewController {
         scanAction = {
             self.presenter?.routeToQris(nav: self.navigationController!)
         }
-        checkFirstBalance()
+        
         addBalanceButton.addTarget(self, action: #selector(updateBalanceAction), for: .touchUpInside)
         scanQrisButton.addTarget(self, action: #selector(scanQRAction), for: .touchUpInside)
     }
@@ -56,7 +61,6 @@ class HomeViewController: UIViewController {
         self.presenter?.fetchBalance { bal in
             if bal?.balance == 0 || bal?.balance == nil {
                 self.presenter?.addBalance { balance in
-                    print(balance)
                     if let balance {
                         DispatchQueue.main.async {
                             self.isLoadingBalance = false
