@@ -19,6 +19,7 @@ class HomeViewController: UIViewController {
     private var isLoadingBalance = true
     private var BalanceAction: ((Bool) -> Void)?
     private var scanAction: (() -> Void)?
+    private var paymentHistoryDidTap: (() -> Void)?
     init(presenter: HomePresenter) {
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
@@ -52,9 +53,13 @@ class HomeViewController: UIViewController {
         scanAction = {
             self.presenter?.routeToQris(nav: self.navigationController!)
         }
+        paymentHistoryDidTap = {
+            self.presenter?.routeToPaymentHistory(nav: self.navigationController!)
+        }
         
         addBalanceButton.addTarget(self, action: #selector(updateBalanceAction), for: .touchUpInside)
         scanQrisButton.addTarget(self, action: #selector(scanQRAction), for: .touchUpInside)
+        paymentHistoryButton.addTarget(self, action: #selector(goToPaymentHistory), for: .touchUpInside)
     }
     
     private func checkFirstBalance() {
@@ -89,6 +94,10 @@ class HomeViewController: UIViewController {
             }
             
         }
+    }
+    
+    @objc private func goToPaymentHistory() {
+        paymentHistoryDidTap?()
     }
     
     @objc private func scanQRAction() {

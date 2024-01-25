@@ -12,7 +12,7 @@ protocol HomePresenterProtocol {
     func addBalance(completion: @escaping (BalanceModel?) -> Void)
     func updateBalance(completion: @escaping (BalanceModel?) -> Void)
     func routeToQris(nav: UINavigationController)
-    func routeToPaymentHistory()
+    func routeToPaymentHistory(nav: UINavigationController)
 }
 
 class HomePresenter: HomePresenterProtocol {
@@ -56,8 +56,8 @@ class HomePresenter: HomePresenterProtocol {
         router?.goToQRScanner(nav: nav)
     }
     
-    func routeToPaymentHistory() {
-        
+    func routeToPaymentHistory(nav: UINavigationController) {
+        router?.goToPaymentHistory(nav: nav)
     }
     
     

@@ -7,7 +7,14 @@
 
 import Foundation
 import UIKit
-class HomeRouter {
+
+protocol HomeRouterProtocol {
+    func goToHome() -> HomeViewController
+    func goToPaymentHistory(nav: UINavigationController)
+    func goToQRScanner(nav: UINavigationController)
+}
+
+class HomeRouter: HomeRouterProtocol {
     static let shared = HomeRouter()
     
     func goToHome() -> HomeViewController {
@@ -15,7 +22,11 @@ class HomeRouter {
         let vc = HomeViewController(presenter: presenter)
         return vc
     }
-    
+    func goToPaymentHistory(nav: UINavigationController) {
+        let presenter = PaymentHistoryPresenter(interactor: PaymentHistoryInteractor.shared, router: PaymentHistoryRouter.shared)
+        let vc = PaymentHistoryViewController(presenter: presenter)
+        nav.pushViewController(vc, animated: true)
+    }
     func goToQRScanner(nav: UINavigationController) {
         let presenter = ScanQRPresenter(router: ScanQRRouter.shared)
         let vc = ScanQRViewController(presenter: presenter)
