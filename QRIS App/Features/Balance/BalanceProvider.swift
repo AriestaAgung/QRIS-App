@@ -11,9 +11,9 @@ import CoreData
 class BalanceProvider {
     static let shared = BalanceProvider()
     private lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "BalanceContainer")
+        let container = NSPersistentContainer(name: "BalanceDataModel")
         container.loadPersistentStores { _, err in
-            guard err != nil else {
+            guard err == nil else {
                 fatalError("Unresolved Error: \(String(describing: err))")
             }
         }
@@ -26,7 +26,7 @@ class BalanceProvider {
     
     
     
-    internal func newTaskContext() -> NSManagedObjectContext {
+    func newTaskContext() -> NSManagedObjectContext {
         let taskContext = persistentContainer.newBackgroundContext()
         taskContext.undoManager = nil
         

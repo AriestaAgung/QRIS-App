@@ -8,28 +8,57 @@
 import Foundation
 
 protocol HomePresenterProtocol {
-    func provideBalance() -> String
-    func fetchBalance()
+    func fetchBalance(completion: @escaping (BalanceModel?) -> Void)
+    func addBalance(completion: @escaping (BalanceModel?) -> Void)
+    func updateBalance(completion: @escaping (BalanceModel?) -> Void)
     func routeToQris()
     func routeToPaymentHistory()
 }
 
 class HomePresenter: HomePresenterProtocol {
-    func provideBalance() -> String {
-        <#code#>
+    private var interactor: HomeInteractor?
+    private var router: HomeRouter?
+    private var balanceModel: BalanceModel?
+    init(interactor: HomeInteractor? = nil, router: HomeRouter? = nil) {
+        self.interactor = interactor
+        self.router = router
     }
     
-    func fetchBalance() {
+    
+    func fetchBalance(completion: @escaping (BalanceModel?) -> Void) {
         
-        
+        interactor?.fetchBalance{ balance in
+            if let balance {
+                self.balanceModel = balance
+                completion(self.balanceModel)
+            } else {
+                completion(nil)
+            }
+        }
+    }
+    func addBalance(completion: @escaping (BalanceModel?) -> Void) {
+        interactor?.addBalance(500000) { bal in
+            print("presenter - add balance \(bal)")
+            if let bal {
+                self.balanceModel = bal
+                completion(bal)
+            } else {
+                completion(nil)
+            }
+        }
+    }
+    func updateBalance(completion: @escaping (BalanceModel?) -> Void) {
+        interactor?.updateBalance(500000) { bal in
+            completion(bal)
+        }
     }
     
     func routeToQris() {
-        <#code#>
+        
     }
     
     func routeToPaymentHistory() {
-        <#code#>
+        
     }
     
     

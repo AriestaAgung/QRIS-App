@@ -23,6 +23,7 @@
 		EBD7FC082B617C2E00C850BA /* BalanceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC072B617C2E00C850BA /* BalanceProvider.swift */; };
 		EBD7FC0A2B617EC200C850BA /* BalanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC092B617EC200C850BA /* BalanceModel.swift */; };
 		EBD7FC0C2B617FFE00C850BA /* BalanceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC0B2B617FFE00C850BA /* BalanceInteractor.swift */; };
+		EBD7FC0E2B6183E100C850BA /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC0D2B6183E100C850BA /* HomeRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		EBD7FC072B617C2E00C850BA /* BalanceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceProvider.swift; sourceTree = "<group>"; };
 		EBD7FC092B617EC200C850BA /* BalanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceModel.swift; sourceTree = "<group>"; };
 		EBD7FC0B2B617FFE00C850BA /* BalanceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceInteractor.swift; sourceTree = "<group>"; };
+		EBD7FC0D2B6183E100C850BA /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				EBD7FBF82B61722100C850BA /* HomeViewController.xib */,
 				EBD7FBFC2B61762600C850BA /* HomePresenter.swift */,
 				EBD7FBFE2B61769500C850BA /* HomeInteractor.swift */,
+				EBD7FC0D2B6183E100C850BA /* HomeRouter.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				EBD7FBF92B61722100C850BA /* HomeViewController.swift in Sources */,
 				EBD7FBFF2B61769500C850BA /* HomeInteractor.swift in Sources */,
 				EBD7FBFD2B61762700C850BA /* HomePresenter.swift in Sources */,
+				EBD7FC0E2B6183E100C850BA /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
