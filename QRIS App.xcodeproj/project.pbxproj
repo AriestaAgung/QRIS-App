@@ -9,13 +9,42 @@
 /* Begin PBXBuildFile section */
 		EBD7FBC52B616A6800C850BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBC42B616A6800C850BA /* AppDelegate.swift */; };
 		EBD7FBC72B616A6800C850BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBC62B616A6800C850BA /* SceneDelegate.swift */; };
-		EBD7FBC92B616A6800C850BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBC82B616A6800C850BA /* ViewController.swift */; };
-		EBD7FBCC2B616A6800C850BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7FBCA2B616A6800C850BA /* Main.storyboard */; };
 		EBD7FBCE2B616A6A00C850BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD7FBCD2B616A6A00C850BA /* Assets.xcassets */; };
 		EBD7FBD12B616A6A00C850BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7FBCF2B616A6A00C850BA /* LaunchScreen.storyboard */; };
 		EBD7FBDC2B616A6A00C850BA /* QRIS_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBDB2B616A6A00C850BA /* QRIS_AppTests.swift */; };
 		EBD7FBE62B616A6A00C850BA /* QRIS_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBE52B616A6A00C850BA /* QRIS_AppUITests.swift */; };
 		EBD7FBE82B616A6A00C850BA /* QRIS_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBE72B616A6A00C850BA /* QRIS_AppUITestsLaunchTests.swift */; };
+		EBD7FBF92B61722100C850BA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBF72B61722100C850BA /* HomeViewController.swift */; };
+		EBD7FBFA2B61722100C850BA /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD7FBF82B61722100C850BA /* HomeViewController.xib */; };
+		EBD7FBFD2B61762700C850BA /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBFC2B61762600C850BA /* HomePresenter.swift */; };
+		EBD7FBFF2B61769500C850BA /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBFE2B61769500C850BA /* HomeInteractor.swift */; };
+		EBD7FC022B6178AF00C850BA /* UserDefaultsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC012B6178AF00C850BA /* UserDefaultsUtils.swift */; };
+		EBD7FC062B617BBF00C850BA /* BalanceDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC042B617BBF00C850BA /* BalanceDataModel.xcdatamodeld */; };
+		EBD7FC082B617C2E00C850BA /* BalanceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC072B617C2E00C850BA /* BalanceProvider.swift */; };
+		EBD7FC0A2B617EC200C850BA /* BalanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC092B617EC200C850BA /* BalanceModel.swift */; };
+		EBD7FC0C2B617FFE00C850BA /* BalanceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC0B2B617FFE00C850BA /* BalanceInteractor.swift */; };
+		EBD7FC0E2B6183E100C850BA /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC0D2B6183E100C850BA /* HomeRouter.swift */; };
+		EBD7FC112B623A6000C850BA /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC0F2B623A6000C850BA /* ScanQRViewController.swift */; };
+		EBD7FC122B623A6000C850BA /* ScanQRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD7FC102B623A6000C850BA /* ScanQRViewController.xib */; };
+		EBD7FC152B623DAB00C850BA /* ScanQRPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC142B623DAB00C850BA /* ScanQRPresenter.swift */; };
+		EBD7FC172B623DB400C850BA /* ScanQRRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC162B623DB400C850BA /* ScanQRRouter.swift */; };
+		EBD7FC1A2B6245CA00C850BA /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC182B6245CA00C850BA /* PaymentViewController.swift */; };
+		EBD7FC1B2B6245CA00C850BA /* PaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD7FC192B6245CA00C850BA /* PaymentViewController.xib */; };
+		EBD7FC1D2B6248EA00C850BA /* PaymentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC1C2B6248EA00C850BA /* PaymentModel.swift */; };
+		EBD7FC1F2B62498000C850BA /* PaymentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC1E2B62498000C850BA /* PaymentPresenter.swift */; };
+		EBD7FC212B62498900C850BA /* PaymentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC202B62498900C850BA /* PaymentInteractor.swift */; };
+		EBD7FC232B6249A000C850BA /* PaymentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC222B6249A000C850BA /* PaymentRouter.swift */; };
+		EBD7FC282B625CF600C850BA /* TransactionDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC262B625CF600C850BA /* TransactionDataModel.xcdatamodeld */; };
+		EBD7FC2A2B625D3600C850BA /* TransactionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC292B625D3600C850BA /* TransactionProvider.swift */; };
+		EBD7FC2C2B625D6100C850BA /* TransactionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC2B2B625D6100C850BA /* TransactionInteractor.swift */; };
+		EBD7FC2E2B625E0A00C850BA /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC2D2B625E0A00C850BA /* TransactionModel.swift */; };
+		EBD7FC322B626BBB00C850BA /* PaymentHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC302B626BBB00C850BA /* PaymentHistoryViewController.swift */; };
+		EBD7FC332B626BBB00C850BA /* PaymentHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD7FC312B626BBB00C850BA /* PaymentHistoryViewController.xib */; };
+		EBD7FC352B626BD000C850BA /* PaymentHistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC342B626BD000C850BA /* PaymentHistoryPresenter.swift */; };
+		EBD7FC372B626BE800C850BA /* PaymentHistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC362B626BE800C850BA /* PaymentHistoryRouter.swift */; };
+		EBD7FC392B626C0000C850BA /* PaymentHistoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC382B626C0000C850BA /* PaymentHistoryInteractor.swift */; };
+		EBD7FC422B62783300C850BA /* PaymentHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC402B62783300C850BA /* PaymentHistoryTableViewCell.swift */; };
+		EBD7FC432B62783400C850BA /* PaymentHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD7FC412B62783300C850BA /* PaymentHistoryTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +68,6 @@
 		EBD7FBC12B616A6800C850BA /* QRIS App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QRIS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD7FBC42B616A6800C850BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD7FBC62B616A6800C850BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EBD7FBC82B616A6800C850BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EBD7FBCB2B616A6800C850BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBD7FBCD2B616A6A00C850BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBD7FBD02B616A6A00C850BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBD7FBD22B616A6A00C850BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +76,37 @@
 		EBD7FBE12B616A6A00C850BA /* QRIS AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QRIS AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD7FBE52B616A6A00C850BA /* QRIS_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRIS_AppUITests.swift; sourceTree = "<group>"; };
 		EBD7FBE72B616A6A00C850BA /* QRIS_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRIS_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EBD7FBF72B61722100C850BA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EBD7FBF82B61722100C850BA /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		EBD7FBFC2B61762600C850BA /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		EBD7FBFE2B61769500C850BA /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		EBD7FC012B6178AF00C850BA /* UserDefaultsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtils.swift; sourceTree = "<group>"; };
+		EBD7FC052B617BBF00C850BA /* BalanceDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BalanceDataModel.xcdatamodel; sourceTree = "<group>"; };
+		EBD7FC072B617C2E00C850BA /* BalanceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceProvider.swift; sourceTree = "<group>"; };
+		EBD7FC092B617EC200C850BA /* BalanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceModel.swift; sourceTree = "<group>"; };
+		EBD7FC0B2B617FFE00C850BA /* BalanceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceInteractor.swift; sourceTree = "<group>"; };
+		EBD7FC0D2B6183E100C850BA /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		EBD7FC0F2B623A6000C850BA /* ScanQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
+		EBD7FC102B623A6000C850BA /* ScanQRViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanQRViewController.xib; sourceTree = "<group>"; };
+		EBD7FC142B623DAB00C850BA /* ScanQRPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRPresenter.swift; sourceTree = "<group>"; };
+		EBD7FC162B623DB400C850BA /* ScanQRRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRRouter.swift; sourceTree = "<group>"; };
+		EBD7FC182B6245CA00C850BA /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		EBD7FC192B6245CA00C850BA /* PaymentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentViewController.xib; sourceTree = "<group>"; };
+		EBD7FC1C2B6248EA00C850BA /* PaymentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentModel.swift; sourceTree = "<group>"; };
+		EBD7FC1E2B62498000C850BA /* PaymentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentPresenter.swift; sourceTree = "<group>"; };
+		EBD7FC202B62498900C850BA /* PaymentInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentInteractor.swift; sourceTree = "<group>"; };
+		EBD7FC222B6249A000C850BA /* PaymentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentRouter.swift; sourceTree = "<group>"; };
+		EBD7FC272B625CF600C850BA /* TransactionDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TransactionDataModel.xcdatamodel; sourceTree = "<group>"; };
+		EBD7FC292B625D3600C850BA /* TransactionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionProvider.swift; sourceTree = "<group>"; };
+		EBD7FC2B2B625D6100C850BA /* TransactionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionInteractor.swift; sourceTree = "<group>"; };
+		EBD7FC2D2B625E0A00C850BA /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		EBD7FC302B626BBB00C850BA /* PaymentHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryViewController.swift; sourceTree = "<group>"; };
+		EBD7FC312B626BBB00C850BA /* PaymentHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentHistoryViewController.xib; sourceTree = "<group>"; };
+		EBD7FC342B626BD000C850BA /* PaymentHistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryPresenter.swift; sourceTree = "<group>"; };
+		EBD7FC362B626BE800C850BA /* PaymentHistoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryRouter.swift; sourceTree = "<group>"; };
+		EBD7FC382B626C0000C850BA /* PaymentHistoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryInteractor.swift; sourceTree = "<group>"; };
+		EBD7FC402B62783300C850BA /* PaymentHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		EBD7FC412B62783300C850BA /* PaymentHistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentHistoryTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +157,9 @@
 		EBD7FBC32B616A6800C850BA /* QRIS App */ = {
 			isa = PBXGroup;
 			children = (
-				EBD7FBC42B616A6800C850BA /* AppDelegate.swift */,
-				EBD7FBC62B616A6800C850BA /* SceneDelegate.swift */,
-				EBD7FBC82B616A6800C850BA /* ViewController.swift */,
-				EBD7FBCA2B616A6800C850BA /* Main.storyboard */,
-				EBD7FBCD2B616A6A00C850BA /* Assets.xcassets */,
-				EBD7FBCF2B616A6A00C850BA /* LaunchScreen.storyboard */,
-				EBD7FBD22B616A6A00C850BA /* Info.plist */,
+				EBD7FC002B6176DF00C850BA /* Utils */,
+				EBD7FBF52B6171F000C850BA /* Features */,
+				EBD7FBF42B61719500C850BA /* App */,
 			);
 			path = "QRIS App";
 			sourceTree = "<group>";
@@ -125,6 +179,119 @@
 				EBD7FBE72B616A6A00C850BA /* QRIS_AppUITestsLaunchTests.swift */,
 			);
 			path = "QRIS AppUITests";
+			sourceTree = "<group>";
+		};
+		EBD7FBF42B61719500C850BA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7FBC42B616A6800C850BA /* AppDelegate.swift */,
+				EBD7FBC62B616A6800C850BA /* SceneDelegate.swift */,
+				EBD7FBCD2B616A6A00C850BA /* Assets.xcassets */,
+				EBD7FBCF2B616A6A00C850BA /* LaunchScreen.storyboard */,
+				EBD7FBD22B616A6A00C850BA /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EBD7FBF52B6171F000C850BA /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7FC2F2B626BA900C850BA /* PaymentHistory */,
+				EBD7FC252B625CE500C850BA /* TransactionEntity */,
+				EBD7FC132B623B5B00C850BA /* Payment */,
+				EBD7FC032B617BAD00C850BA /* Balance */,
+				EBD7FBFB2B61745400C850BA /* ScanQR */,
+				EBD7FBF62B61720500C850BA /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		EBD7FBF62B61720500C850BA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7FBF72B61722100C850BA /* HomeViewController.swift */,
+				EBD7FBF82B61722100C850BA /* HomeViewController.xib */,
+				EBD7FBFC2B61762600C850BA /* HomePresenter.swift */,
+				EBD7FBFE2B61769500C850BA /* HomeInteractor.swift */,
+				EBD7FC0D2B6183E100C850BA /* HomeRouter.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EBD7FBFB2B61745400C850BA /* ScanQR */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7FC0F2B623A6000C850BA /* ScanQRViewController.swift */,
+				EBD7FC102B623A6000C850BA /* ScanQRViewController.xib */,
+				EBD7FC142B623DAB00C850BA /* ScanQRPresenter.swift */,
+				EBD7FC162B623DB400C850BA /* ScanQRRouter.swift */,
+			);
+			path = ScanQR;
+			sourceTree = "<group>";
+		};
+		EBD7FC002B6176DF00C850BA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7FC012B6178AF00C850BA /* UserDefaultsUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EBD7FC032B617BAD00C850BA /* Balance */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7FC042B617BBF00C850BA /* BalanceDataModel.xcdatamodeld */,
+				EBD7FC072B617C2E00C850BA /* BalanceProvider.swift */,
+				EBD7FC092B617EC200C850BA /* BalanceModel.swift */,
+				EBD7FC0B2B617FFE00C850BA /* BalanceInteractor.swift */,
+			);
+			path = Balance;
+			sourceTree = "<group>";
+		};
+		EBD7FC132B623B5B00C850BA /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7FC182B6245CA00C850BA /* PaymentViewController.swift */,
+				EBD7FC192B6245CA00C850BA /* PaymentViewController.xib */,
+				EBD7FC1C2B6248EA00C850BA /* PaymentModel.swift */,
+				EBD7FC1E2B62498000C850BA /* PaymentPresenter.swift */,
+				EBD7FC222B6249A000C850BA /* PaymentRouter.swift */,
+				EBD7FC202B62498900C850BA /* PaymentInteractor.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		EBD7FC252B625CE500C850BA /* TransactionEntity */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7FC262B625CF600C850BA /* TransactionDataModel.xcdatamodeld */,
+				EBD7FC292B625D3600C850BA /* TransactionProvider.swift */,
+				EBD7FC2B2B625D6100C850BA /* TransactionInteractor.swift */,
+				EBD7FC2D2B625E0A00C850BA /* TransactionModel.swift */,
+			);
+			path = TransactionEntity;
+			sourceTree = "<group>";
+		};
+		EBD7FC2F2B626BA900C850BA /* PaymentHistory */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7FC3F2B62781F00C850BA /* Cell */,
+				EBD7FC302B626BBB00C850BA /* PaymentHistoryViewController.swift */,
+				EBD7FC312B626BBB00C850BA /* PaymentHistoryViewController.xib */,
+				EBD7FC342B626BD000C850BA /* PaymentHistoryPresenter.swift */,
+				EBD7FC362B626BE800C850BA /* PaymentHistoryRouter.swift */,
+				EBD7FC382B626C0000C850BA /* PaymentHistoryInteractor.swift */,
+			);
+			path = PaymentHistory;
+			sourceTree = "<group>";
+		};
+		EBD7FC3F2B62781F00C850BA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7FC402B62783300C850BA /* PaymentHistoryTableViewCell.swift */,
+				EBD7FC412B62783300C850BA /* PaymentHistoryTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +398,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBD7FC122B623A6000C850BA /* ScanQRViewController.xib in Resources */,
 				EBD7FBD12B616A6A00C850BA /* LaunchScreen.storyboard in Resources */,
+				EBD7FC432B62783400C850BA /* PaymentHistoryTableViewCell.xib in Resources */,
 				EBD7FBCE2B616A6A00C850BA /* Assets.xcassets in Resources */,
-				EBD7FBCC2B616A6800C850BA /* Main.storyboard in Resources */,
+				EBD7FC1B2B6245CA00C850BA /* PaymentViewController.xib in Resources */,
+				EBD7FC332B626BBB00C850BA /* PaymentHistoryViewController.xib in Resources */,
+				EBD7FBFA2B61722100C850BA /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +429,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBD7FBC92B616A6800C850BA /* ViewController.swift in Sources */,
 				EBD7FBC52B616A6800C850BA /* AppDelegate.swift in Sources */,
+				EBD7FC082B617C2E00C850BA /* BalanceProvider.swift in Sources */,
 				EBD7FBC72B616A6800C850BA /* SceneDelegate.swift in Sources */,
+				EBD7FC232B6249A000C850BA /* PaymentRouter.swift in Sources */,
+				EBD7FC2E2B625E0A00C850BA /* TransactionModel.swift in Sources */,
+				EBD7FC022B6178AF00C850BA /* UserDefaultsUtils.swift in Sources */,
+				EBD7FC0A2B617EC200C850BA /* BalanceModel.swift in Sources */,
+				EBD7FC152B623DAB00C850BA /* ScanQRPresenter.swift in Sources */,
+				EBD7FC2A2B625D3600C850BA /* TransactionProvider.swift in Sources */,
+				EBD7FC422B62783300C850BA /* PaymentHistoryTableViewCell.swift in Sources */,
+				EBD7FC0C2B617FFE00C850BA /* BalanceInteractor.swift in Sources */,
+				EBD7FC372B626BE800C850BA /* PaymentHistoryRouter.swift in Sources */,
+				EBD7FC1A2B6245CA00C850BA /* PaymentViewController.swift in Sources */,
+				EBD7FC062B617BBF00C850BA /* BalanceDataModel.xcdatamodeld in Sources */,
+				EBD7FC322B626BBB00C850BA /* PaymentHistoryViewController.swift in Sources */,
+				EBD7FC282B625CF600C850BA /* TransactionDataModel.xcdatamodeld in Sources */,
+				EBD7FC1F2B62498000C850BA /* PaymentPresenter.swift in Sources */,
+				EBD7FC1D2B6248EA00C850BA /* PaymentModel.swift in Sources */,
+				EBD7FC352B626BD000C850BA /* PaymentHistoryPresenter.swift in Sources */,
+				EBD7FBF92B61722100C850BA /* HomeViewController.swift in Sources */,
+				EBD7FC112B623A6000C850BA /* ScanQRViewController.swift in Sources */,
+				EBD7FC392B626C0000C850BA /* PaymentHistoryInteractor.swift in Sources */,
+				EBD7FC212B62498900C850BA /* PaymentInteractor.swift in Sources */,
+				EBD7FC172B623DB400C850BA /* ScanQRRouter.swift in Sources */,
+				EBD7FBFF2B61769500C850BA /* HomeInteractor.swift in Sources */,
+				EBD7FBFD2B61762700C850BA /* HomePresenter.swift in Sources */,
+				EBD7FC0E2B6183E100C850BA /* HomeRouter.swift in Sources */,
+				EBD7FC2C2B625D6100C850BA /* TransactionInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +493,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EBD7FBCA2B616A6800C850BA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EBD7FBCB2B616A6800C850BA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EBD7FBCF2B616A6A00C850BA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -443,8 +631,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "QRIS App/Info.plist";
+				INFOPLIST_FILE = "QRIS App/App/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow QRIS App to use camera to scan QR?";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -471,8 +661,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "QRIS App/Info.plist";
+				INFOPLIST_FILE = "QRIS App/App/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow QRIS App to use camera to scan QR?";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -499,6 +691,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -519,6 +712,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -538,6 +732,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dcd.QRIS-AppUITests";
@@ -556,6 +751,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dcd.QRIS-AppUITests";
@@ -607,6 +803,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EBD7FC042B617BBF00C850BA /* BalanceDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EBD7FC052B617BBF00C850BA /* BalanceDataModel.xcdatamodel */,
+			);
+			currentVersion = EBD7FC052B617BBF00C850BA /* BalanceDataModel.xcdatamodel */;
+			path = BalanceDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		EBD7FC262B625CF600C850BA /* TransactionDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EBD7FC272B625CF600C850BA /* TransactionDataModel.xcdatamodel */,
+			);
+			currentVersion = EBD7FC272B625CF600C850BA /* TransactionDataModel.xcdatamodel */;
+			path = TransactionDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EBD7FBB92B616A6800C850BA /* Project object */;
 }
