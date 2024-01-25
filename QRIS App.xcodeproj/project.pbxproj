@@ -34,6 +34,10 @@
 		EBD7FC1F2B62498000C850BA /* PaymentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC1E2B62498000C850BA /* PaymentPresenter.swift */; };
 		EBD7FC212B62498900C850BA /* PaymentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC202B62498900C850BA /* PaymentInteractor.swift */; };
 		EBD7FC232B6249A000C850BA /* PaymentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC222B6249A000C850BA /* PaymentRouter.swift */; };
+		EBD7FC282B625CF600C850BA /* TransactionDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC262B625CF600C850BA /* TransactionDataModel.xcdatamodeld */; };
+		EBD7FC2A2B625D3600C850BA /* TransactionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC292B625D3600C850BA /* TransactionProvider.swift */; };
+		EBD7FC2C2B625D6100C850BA /* TransactionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC2B2B625D6100C850BA /* TransactionInteractor.swift */; };
+		EBD7FC2E2B625E0A00C850BA /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC2D2B625E0A00C850BA /* TransactionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +89,10 @@
 		EBD7FC1E2B62498000C850BA /* PaymentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentPresenter.swift; sourceTree = "<group>"; };
 		EBD7FC202B62498900C850BA /* PaymentInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentInteractor.swift; sourceTree = "<group>"; };
 		EBD7FC222B6249A000C850BA /* PaymentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentRouter.swift; sourceTree = "<group>"; };
+		EBD7FC272B625CF600C850BA /* TransactionDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TransactionDataModel.xcdatamodel; sourceTree = "<group>"; };
+		EBD7FC292B625D3600C850BA /* TransactionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionProvider.swift; sourceTree = "<group>"; };
+		EBD7FC2B2B625D6100C850BA /* TransactionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionInteractor.swift; sourceTree = "<group>"; };
+		EBD7FC2D2B625E0A00C850BA /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +182,7 @@
 		EBD7FBF52B6171F000C850BA /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				EBD7FC252B625CE500C850BA /* TransactionEntity */,
 				EBD7FC132B623B5B00C850BA /* Payment */,
 				EBD7FC032B617BAD00C850BA /* Balance */,
 				EBD7FBFB2B61745400C850BA /* ScanQR */,
@@ -235,6 +244,17 @@
 				EBD7FC202B62498900C850BA /* PaymentInteractor.swift */,
 			);
 			path = Payment;
+			sourceTree = "<group>";
+		};
+		EBD7FC252B625CE500C850BA /* TransactionEntity */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7FC262B625CF600C850BA /* TransactionDataModel.xcdatamodeld */,
+				EBD7FC292B625D3600C850BA /* TransactionProvider.swift */,
+				EBD7FC2B2B625D6100C850BA /* TransactionInteractor.swift */,
+				EBD7FC2D2B625E0A00C850BA /* TransactionModel.swift */,
+			);
+			path = TransactionEntity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,12 +394,15 @@
 				EBD7FC082B617C2E00C850BA /* BalanceProvider.swift in Sources */,
 				EBD7FBC72B616A6800C850BA /* SceneDelegate.swift in Sources */,
 				EBD7FC232B6249A000C850BA /* PaymentRouter.swift in Sources */,
+				EBD7FC2E2B625E0A00C850BA /* TransactionModel.swift in Sources */,
 				EBD7FC022B6178AF00C850BA /* UserDefaultsUtils.swift in Sources */,
 				EBD7FC0A2B617EC200C850BA /* BalanceModel.swift in Sources */,
 				EBD7FC152B623DAB00C850BA /* ScanQRPresenter.swift in Sources */,
+				EBD7FC2A2B625D3600C850BA /* TransactionProvider.swift in Sources */,
 				EBD7FC0C2B617FFE00C850BA /* BalanceInteractor.swift in Sources */,
 				EBD7FC1A2B6245CA00C850BA /* PaymentViewController.swift in Sources */,
 				EBD7FC062B617BBF00C850BA /* BalanceDataModel.xcdatamodeld in Sources */,
+				EBD7FC282B625CF600C850BA /* TransactionDataModel.xcdatamodeld in Sources */,
 				EBD7FC1F2B62498000C850BA /* PaymentPresenter.swift in Sources */,
 				EBD7FC1D2B6248EA00C850BA /* PaymentModel.swift in Sources */,
 				EBD7FBF92B61722100C850BA /* HomeViewController.swift in Sources */,
@@ -389,6 +412,7 @@
 				EBD7FBFF2B61769500C850BA /* HomeInteractor.swift in Sources */,
 				EBD7FBFD2B61762700C850BA /* HomePresenter.swift in Sources */,
 				EBD7FC0E2B6183E100C850BA /* HomeRouter.swift in Sources */,
+				EBD7FC2C2B625D6100C850BA /* TransactionInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,6 +768,16 @@
 			);
 			currentVersion = EBD7FC052B617BBF00C850BA /* BalanceDataModel.xcdatamodel */;
 			path = BalanceDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		EBD7FC262B625CF600C850BA /* TransactionDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EBD7FC272B625CF600C850BA /* TransactionDataModel.xcdatamodel */,
+			);
+			currentVersion = EBD7FC272B625CF600C850BA /* TransactionDataModel.xcdatamodel */;
+			path = TransactionDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

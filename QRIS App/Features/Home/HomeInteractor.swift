@@ -16,7 +16,6 @@ protocol HomeUseCase {
 class HomeInteractor: HomeUseCase {
     func addBalance(_ amount: Double, completion: @escaping (BalanceModel?) -> Void) {
         BalanceInteractor.shared.addBalance(amount) { bal in
-            print("HomeInteractor - add balance \(bal)")
             completion(bal)
         }
     }

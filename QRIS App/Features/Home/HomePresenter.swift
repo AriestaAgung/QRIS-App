@@ -38,7 +38,6 @@ class HomePresenter: HomePresenterProtocol {
     }
     func addBalance(completion: @escaping (BalanceModel?) -> Void) {
         interactor?.addBalance(500000) { bal in
-            print("presenter - add balance \(bal)")
             if let bal {
                 self.balanceModel = bal
                 completion(bal)
