@@ -31,6 +31,7 @@ class PaymentHistoryViewController: UIViewController {
         historyTableView.register(PaymentHistoryTableViewCell.nib, forCellReuseIdentifier: "paymentHistoryCell")
         historyTableView.dataSource = self
         historyTableView.delegate = self
+        historyTableView.allowsSelection = false
         presenter?.fetchPaymentData { transactions in
             self.isLoadingData = false
             DispatchQueue.main.async {
