@@ -8,7 +8,7 @@
 import Foundation
 import CoreData
 class TransactionProvider {
-    static let shared = BalanceProvider()
+    static let shared = TransactionProvider()
     private lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "TransactionDataModel")
         container.loadPersistentStores { _, err in

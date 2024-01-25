@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentHistoryViewController" customModule="QRIS_App" customModuleProvider="target">
             <connections>
+                <outlet property="emptyViewLabel" destination="Pnz-cF-4EV" id="cJh-rv-7hA"/>
                 <outlet property="historyTableView" destination="98t-jS-Gb8" id="apz-wT-SEr"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -22,6 +23,12 @@
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="98t-jS-Gb8">
                     <rect key="frame" x="0.0" y="59" width="393" height="793"/>
                 </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment history is empty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnz-cF-4EV">
+                    <rect key="frame" x="100.66666666666669" y="415.66666666666669" width="192" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -30,6 +37,8 @@
                 <constraint firstAttribute="bottom" secondItem="98t-jS-Gb8" secondAttribute="bottom" id="Lsh-6T-sGO"/>
                 <constraint firstItem="98t-jS-Gb8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Qag-Ox-dol"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="98t-jS-Gb8" secondAttribute="trailing" id="ZP6-nk-Z8E"/>
+                <constraint firstItem="Pnz-cF-4EV" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="mCV-Bg-ktj"/>
+                <constraint firstItem="Pnz-cF-4EV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="r77-FX-nyQ"/>
             </constraints>
             <point key="canvasLocation" x="-19.083969465648853" y="-11.267605633802818"/>
         </view>

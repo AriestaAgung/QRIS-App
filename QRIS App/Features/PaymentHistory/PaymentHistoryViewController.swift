@@ -10,7 +10,9 @@ import UIKit
 class PaymentHistoryViewController: UIViewController {
 
     @IBOutlet weak var historyTableView: UITableView!
+    @IBOutlet weak var emptyViewLabel: UILabel!
     private let presenter: PaymentHistoryPresenter?
+    private var isLoadingData = true
     init(presenter: PaymentHistoryPresenter) {
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
@@ -29,17 +31,37 @@ class PaymentHistoryViewController: UIViewController {
         historyTableView.register(PaymentHistoryTableViewCell.nib, forCellReuseIdentifier: "paymentHistoryCell")
         historyTableView.dataSource = self
         historyTableView.delegate = self
+        presenter?.fetchPaymentData { transactions in
+            self.isLoadingData = false
+            DispatchQueue.main.async {
+                if transactions.count == 0 {
+                    self.historyTableView.isHidden = true
+                    self.emptyViewLabel.isHidden = false
+                } else {
+                    self.historyTableView.isHidden = false
+                    self.emptyViewLabel.isHidden = true
+                }
+                self.historyTableView.reloadData()
+                
+            }
+        }
     }
 }
 
 extension PaymentHistoryViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        3
+        presenter?.getPaymentData().count ?? 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "paymentHistoryCell", for: indexPath) as! PaymentHistoryTableViewCell
-        cell.merchantLabel?.text = "Hello World"
+        if isLoadingData {
+            cell.merchantLabel?.text = "..."
+            cell.amountLabel.text = "..."
+        } else {
+            cell.merchantLabel.text = presenter?.getPaymentData()[indexPath.row]?.merchantName
+            cell.amountLabel.text = "Rp" + (presenter?.getPaymentData()[indexPath.row]?.amount?.description ?? "0")
+        }
         
         return cell
     }
