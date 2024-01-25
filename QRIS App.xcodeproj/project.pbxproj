@@ -18,7 +18,6 @@
 		EBD7FBFA2B61722100C850BA /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD7FBF82B61722100C850BA /* HomeViewController.xib */; };
 		EBD7FBFD2B61762700C850BA /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBFC2B61762600C850BA /* HomePresenter.swift */; };
 		EBD7FBFF2B61769500C850BA /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBFE2B61769500C850BA /* HomeInteractor.swift */; };
-		EBD7FC022B6178AF00C850BA /* UserDefaultsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC012B6178AF00C850BA /* UserDefaultsUtils.swift */; };
 		EBD7FC062B617BBF00C850BA /* BalanceDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC042B617BBF00C850BA /* BalanceDataModel.xcdatamodeld */; };
 		EBD7FC082B617C2E00C850BA /* BalanceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC072B617C2E00C850BA /* BalanceProvider.swift */; };
 		EBD7FC0A2B617EC200C850BA /* BalanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC092B617EC200C850BA /* BalanceModel.swift */; };
@@ -80,7 +79,6 @@
 		EBD7FBF82B61722100C850BA /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		EBD7FBFC2B61762600C850BA /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		EBD7FBFE2B61769500C850BA /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
-		EBD7FC012B6178AF00C850BA /* UserDefaultsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtils.swift; sourceTree = "<group>"; };
 		EBD7FC052B617BBF00C850BA /* BalanceDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BalanceDataModel.xcdatamodel; sourceTree = "<group>"; };
 		EBD7FC072B617C2E00C850BA /* BalanceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceProvider.swift; sourceTree = "<group>"; };
 		EBD7FC092B617EC200C850BA /* BalanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceModel.swift; sourceTree = "<group>"; };
@@ -157,7 +155,6 @@
 		EBD7FBC32B616A6800C850BA /* QRIS App */ = {
 			isa = PBXGroup;
 			children = (
-				EBD7FC002B6176DF00C850BA /* Utils */,
 				EBD7FBF52B6171F000C850BA /* Features */,
 				EBD7FBF42B61719500C850BA /* App */,
 			);
@@ -227,14 +224,6 @@
 				EBD7FC162B623DB400C850BA /* ScanQRRouter.swift */,
 			);
 			path = ScanQR;
-			sourceTree = "<group>";
-		};
-		EBD7FC002B6176DF00C850BA /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				EBD7FC012B6178AF00C850BA /* UserDefaultsUtils.swift */,
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		EBD7FC032B617BAD00C850BA /* Balance */ = {
@@ -434,7 +423,6 @@
 				EBD7FBC72B616A6800C850BA /* SceneDelegate.swift in Sources */,
 				EBD7FC232B6249A000C850BA /* PaymentRouter.swift in Sources */,
 				EBD7FC2E2B625E0A00C850BA /* TransactionModel.swift in Sources */,
-				EBD7FC022B6178AF00C850BA /* UserDefaultsUtils.swift in Sources */,
 				EBD7FC0A2B617EC200C850BA /* BalanceModel.swift in Sources */,
 				EBD7FC152B623DAB00C850BA /* ScanQRPresenter.swift in Sources */,
 				EBD7FC2A2B625D3600C850BA /* TransactionProvider.swift in Sources */,
