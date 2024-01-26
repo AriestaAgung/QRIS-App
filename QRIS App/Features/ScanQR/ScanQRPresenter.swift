@@ -8,7 +8,11 @@
 import Foundation
 import UIKit
 
-class ScanQRPresenter {
+protocol ScanQRPresenterProtocol {
+    func goToPayment(nav: UINavigationController, data: PaymentModel)
+}
+
+class ScanQRPresenter: ScanQRPresenterProtocol {
     private var router: ScanQRRouter?
     init(router: ScanQRRouter? = nil) {
         self.router = router

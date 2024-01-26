@@ -7,7 +7,11 @@
 
 import Foundation
 
-class PaymentHistoryPresenter {
+protocol PaymentHistoryProtocol {
+    func getPaymentData() -> [TransactionModel?]!
+    func fetchPaymentData(completion: @escaping ([TransactionModel?]) -> Void)
+}
+class PaymentHistoryPresenter: PaymentHistoryProtocol {
     private var interactor: PaymentHistoryInteractor?
     private var router: PaymentHistoryRouter?
     private var transactionData: [TransactionModel?]! = []

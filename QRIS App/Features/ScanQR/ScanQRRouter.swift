@@ -7,7 +7,11 @@
 
 import Foundation
 
-class ScanQRRouter {
+protocol ScanQRRouterProtocol {
+    func goToPayment(data: PaymentModel) -> PaymentViewController
+}
+
+class ScanQRRouter: ScanQRRouterProtocol {
     static let shared = ScanQRRouter()
     
     func goToPayment(data: PaymentModel) -> PaymentViewController {

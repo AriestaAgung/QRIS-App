@@ -7,7 +7,12 @@
 
 import Foundation
 
-class PaymentInteractor {
+
+protocol PaymentUseCase {
+    func pay(data: PaymentModel, completion: @escaping (BalanceModel?) -> Void)
+}
+
+class PaymentInteractor: PaymentUseCase {
     static let shared = PaymentInteractor()
     
     func pay(data: PaymentModel, completion: @escaping (BalanceModel?) -> Void) {

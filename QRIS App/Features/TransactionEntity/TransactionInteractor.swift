@@ -24,7 +24,6 @@ extension TransactionInteractor {
                 if let result = try self.taskContext?.fetch(fetchRequest) {
                     var transactionItem: [TransactionModel] = []
                     for item in result {
-                        let id = item.value(forKeyPath: "id") as? Int32
                         let transactionId = item.value(forKeyPath: "transactionId") as? String
                         let merchant = item.value(forKeyPath: "merchant") as? String
                         let amount = item.value(forKeyPath: "amount") as? Double
