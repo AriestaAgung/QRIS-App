@@ -7,7 +7,12 @@
 
 import Foundation
 import UIKit
-class PaymentRouter {
+
+protocol PaymentRouterProtocol {
+    func goToHome(nav: UINavigationController)
+}
+
+class PaymentRouter: PaymentRouterProtocol {
     static let shared = PaymentRouter()
     
     func goToHome(nav: UINavigationController) {

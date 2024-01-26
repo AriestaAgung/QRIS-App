@@ -9,4 +9,6 @@ import Foundation
 
 class PaymentHistoryRouter {
     static let shared = PaymentHistoryRouter()
+    
+    //RouteToPaymentDetail
 }
