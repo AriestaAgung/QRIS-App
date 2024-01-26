@@ -1,15 +1,10 @@
-
 # QR Scanner
 
 Simple application made for scanning QR and create a payment with stored balance. This application use CoreData for storing balance and transaction history.
 
-
-
-
 ## Author
 
 - [AriestaAgung](https://www.github.com/AriestaAgung)
-
 
 ## Features
 
@@ -18,12 +13,22 @@ Simple application made for scanning QR and create a payment with stored balance
 - Payment Detail after read the QR
 - Transaction History
 
-
 ## Requirements
 
 - Swift 5
 - XCode Project Version 14
 - Min. iOS Deployment Version 17.2
+
+## QR Format
+
+BankName.TransactionID.MerchantName.Amount
+example:
+
+- BNI.ID12345678.MERCHANT MOCK TEST.50000
+- BCA.12345678.MOCA CAFE.100000
+  QR Example:
+  ![QR Code to scan](https://i.ibb.co/jTd4cb8/QR-Code-test.png)
+
 ## Screenshots
 
 ![Home](https://i.ibb.co/ByFzWgp/IMG-8450.png)
@@ -31,5 +36,3 @@ Simple application made for scanning QR and create a payment with stored balance
 ![QR Code Scanner](https://i.ibb.co/0sYCvmX/IMG-8452.png)
 ![Payment Detail](https://i.ibb.co/k9F4PT3/IMG-8453.png)
 ![QR Code to scan](https://i.ibb.co/jTd4cb8/QR-Code-test.png)
-
-
