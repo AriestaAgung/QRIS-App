@@ -26,9 +26,10 @@ Simple application made for scanning QR and create a payment with stored balance
 - Min. iOS Deployment Version 17.2
 ## Screenshots
 
-![Home](https://ibb.co/R3dvrCF)
-![Transaction History](https://ibb.co/mCmmHcL)
-![QR Code Scanner](https://ibb.co/FH85CmW)
-![Payment Detail](https://ibb.co/4Yx80Ls)
-![QR Code to scan](https://ibb.co/KXYyMb5)
+![Home](https://i.ibb.co/ByFzWgp/IMG-8450.png)
+![Transaction History](https://i.ibb.co/C5qqnHk/IMG-8451.png)
+![QR Code Scanner](https://i.ibb.co/0sYCvmX/IMG-8452.png)
+![Payment Detail](https://i.ibb.co/k9F4PT3/IMG-8453.png)
+![QR Code to scan](https://i.ibb.co/jTd4cb8/QR-Code-test.png)
+
 
