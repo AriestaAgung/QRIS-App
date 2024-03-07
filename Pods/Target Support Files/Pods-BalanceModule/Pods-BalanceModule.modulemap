@@ -1,0 +1,6 @@
+framework module Pods_BalanceModule {
+  umbrella header "Pods-BalanceModule-umbrella.h"
+
+  export *
+  module * { export * }
+}

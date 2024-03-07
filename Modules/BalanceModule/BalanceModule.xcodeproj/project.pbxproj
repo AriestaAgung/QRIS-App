@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C1DCEB1CFCCCC2199777F876 /* Pods_BalanceModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42E3BD68B2DC864B2F86F246 /* Pods_BalanceModule.framework */; };
+		EB2FDF5D2B99771C00EB8F82 /* BalanceModule.docc in Sources */ = {isa = PBXBuildFile; fileRef = EB2FDF5C2B99771C00EB8F82 /* BalanceModule.docc */; };
+		EB2FDF5E2B99771C00EB8F82 /* BalanceModule.h in Headers */ = {isa = PBXBuildFile; fileRef = EB2FDF5B2B99771C00EB8F82 /* BalanceModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB2FDF7B2B99793000EB8F82 /* BalanceDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB2FDF792B99793000EB8F82 /* BalanceDataModel.xcdatamodeld */; };
+		EB2FDF7F2B99794300EB8F82 /* BalanceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2FDF7C2B99794300EB8F82 /* BalanceInteractor.swift */; };
+		EB2FDF802B99794300EB8F82 /* BalanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2FDF7D2B99794300EB8F82 /* BalanceModel.swift */; };
+		EB2FDF812B99794300EB8F82 /* BalanceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2FDF7E2B99794300EB8F82 /* BalanceProvider.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		42E3BD68B2DC864B2F86F246 /* Pods_BalanceModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BalanceModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C290521418334C3436071502 /* Pods-BalanceModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalanceModule.release.xcconfig"; path = "Target Support Files/Pods-BalanceModule/Pods-BalanceModule.release.xcconfig"; sourceTree = "<group>"; };
+		C561453DA9AFF6652B15FB59 /* Pods-BalanceModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalanceModule.debug.xcconfig"; path = "Target Support Files/Pods-BalanceModule/Pods-BalanceModule.debug.xcconfig"; sourceTree = "<group>"; };
+		EB2FDF582B99771C00EB8F82 /* BalanceModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BalanceModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2FDF5B2B99771C00EB8F82 /* BalanceModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BalanceModule.h; sourceTree = "<group>"; };
+		EB2FDF5C2B99771C00EB8F82 /* BalanceModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = BalanceModule.docc; sourceTree = "<group>"; };
+		EB2FDF7A2B99793000EB8F82 /* BalanceDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BalanceDataModel.xcdatamodel; sourceTree = "<group>"; };
+		EB2FDF7C2B99794300EB8F82 /* BalanceInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BalanceInteractor.swift; path = BalanceModule/BalanceInteractor.swift; sourceTree = SOURCE_ROOT; };
+		EB2FDF7D2B99794300EB8F82 /* BalanceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BalanceModel.swift; path = BalanceModule/BalanceModel.swift; sourceTree = SOURCE_ROOT; };
+		EB2FDF7E2B99794300EB8F82 /* BalanceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BalanceProvider.swift; path = BalanceModule/BalanceProvider.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB2FDF552B99771C00EB8F82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1DCEB1CFCCCC2199777F876 /* Pods_BalanceModule.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34C4EC57F3CBF5D64DDD7C21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C561453DA9AFF6652B15FB59 /* Pods-BalanceModule.debug.xcconfig */,
+				C290521418334C3436071502 /* Pods-BalanceModule.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
+			sourceTree = "<group>";
+		};
+		DE1D1A10BC9EBEE9C5713908 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42E3BD68B2DC864B2F86F246 /* Pods_BalanceModule.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB2FDF4E2B99771C00EB8F82 = {
+			isa = PBXGroup;
+			children = (
+				EB2FDF5A2B99771C00EB8F82 /* BalanceModule */,
+				EB2FDF592B99771C00EB8F82 /* Products */,
+				34C4EC57F3CBF5D64DDD7C21 /* Pods */,
+				DE1D1A10BC9EBEE9C5713908 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EB2FDF592B99771C00EB8F82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB2FDF582B99771C00EB8F82 /* BalanceModule.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB2FDF5A2B99771C00EB8F82 /* BalanceModule */ = {
+			isa = PBXGroup;
+			children = (
+				EB2FDF682B9978F600EB8F82 /* Balance */,
+				EB2FDF5B2B99771C00EB8F82 /* BalanceModule.h */,
+				EB2FDF5C2B99771C00EB8F82 /* BalanceModule.docc */,
+			);
+			path = BalanceModule;
+			sourceTree = "<group>";
+		};
+		EB2FDF682B9978F600EB8F82 /* Balance */ = {
+			isa = PBXGroup;
+			children = (
+				EB2FDF7C2B99794300EB8F82 /* BalanceInteractor.swift */,
+				EB2FDF7D2B99794300EB8F82 /* BalanceModel.swift */,
+				EB2FDF7E2B99794300EB8F82 /* BalanceProvider.swift */,
+				EB2FDF792B99793000EB8F82 /* BalanceDataModel.xcdatamodeld */,
+			);
+			name = Balance;
+			path = "../../../QRIS App/Features/Balance";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EB2FDF532B99771C00EB8F82 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2FDF5E2B99771C00EB8F82 /* BalanceModule.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EB2FDF572B99771C00EB8F82 /* BalanceModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB2FDF612B99771C00EB8F82 /* Build configuration list for PBXNativeTarget "BalanceModule" */;
+			buildPhases = (
+				0F80EB5E66A6D547ACD0C58C /* [CP] Check Pods Manifest.lock */,
+				EB2FDF532B99771C00EB8F82 /* Headers */,
+				EB2FDF542B99771C00EB8F82 /* Sources */,
+				EB2FDF552B99771C00EB8F82 /* Frameworks */,
+				EB2FDF562B99771C00EB8F82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BalanceModule;
+			productName = BalanceModule;
+			productReference = EB2FDF582B99771C00EB8F82 /* BalanceModule.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB2FDF4F2B99771C00EB8F82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					EB2FDF572B99771C00EB8F82 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = EB2FDF522B99771C00EB8F82 /* Build configuration list for PBXProject "BalanceModule" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB2FDF4E2B99771C00EB8F82;
+			productRefGroup = EB2FDF592B99771C00EB8F82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB2FDF572B99771C00EB8F82 /* BalanceModule */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB2FDF562B99771C00EB8F82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F80EB5E66A6D547ACD0C58C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BalanceModule-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB2FDF542B99771C00EB8F82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2FDF802B99794300EB8F82 /* BalanceModel.swift in Sources */,
+				EB2FDF7B2B99793000EB8F82 /* BalanceDataModel.xcdatamodeld in Sources */,
+				EB2FDF5D2B99771C00EB8F82 /* BalanceModule.docc in Sources */,
+				EB2FDF812B99794300EB8F82 /* BalanceProvider.swift in Sources */,
+				EB2FDF7F2B99794300EB8F82 /* BalanceInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EB2FDF5F2B99771C00EB8F82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EB2FDF602B99771C00EB8F82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EB2FDF622B99771C00EB8F82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C561453DA9AFF6652B15FB59 /* Pods-BalanceModule.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.BalanceModule;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB2FDF632B99771C00EB8F82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C290521418334C3436071502 /* Pods-BalanceModule.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.BalanceModule;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB2FDF522B99771C00EB8F82 /* Build configuration list for PBXProject "BalanceModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB2FDF5F2B99771C00EB8F82 /* Debug */,
+				EB2FDF602B99771C00EB8F82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB2FDF612B99771C00EB8F82 /* Build configuration list for PBXNativeTarget "BalanceModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB2FDF622B99771C00EB8F82 /* Debug */,
+				EB2FDF632B99771C00EB8F82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB2FDF792B99793000EB8F82 /* BalanceDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB2FDF7A2B99793000EB8F82 /* BalanceDataModel.xcdatamodel */,
+			);
+			currentVersion = EB2FDF7A2B99793000EB8F82 /* BalanceDataModel.xcdatamodel */;
+			name = BalanceDataModel.xcdatamodeld;
+			path = "/Users/odikk/Documents/development/ios/QRIS-App/QRIS App/Features/Balance/BalanceDataModel.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EB2FDF4F2B99771C00EB8F82 /* Project object */;
+}

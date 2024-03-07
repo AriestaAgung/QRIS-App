@@ -7,8 +7,8 @@
 
 import Foundation
 import CoreData
-class BalanceInteractor {
-    static let shared = BalanceInteractor(taskContext: BalanceProvider.shared.newTaskContext())
+public class BalanceInteractor {
+    public static let shared = BalanceInteractor(taskContext: BalanceProvider.shared.newTaskContext())
     private let entityName = "BalanceEntity"
     private let taskContext: NSManagedObjectContext?
     init(taskContext: NSManagedObjectContext?) {
@@ -17,7 +17,7 @@ class BalanceInteractor {
 }
 
 extension BalanceInteractor {
-    func getBalance(completion: @escaping (BalanceModel?) -> Void) {
+    public func getBalance(completion: @escaping (BalanceModel?) -> Void) {
         taskContext?.perform {
             let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: self.entityName)
             fetchRequest.fetchLimit = 1
@@ -37,7 +37,7 @@ extension BalanceInteractor {
         }
     }
     
-    func addBalance(_ amount: Double, completion: @escaping (BalanceModel?) -> Void) {
+    public func addBalance(_ amount: Double, completion: @escaping (BalanceModel?) -> Void) {
         guard let taskContext = taskContext else {return}
         taskContext.performAndWait {
             if let entity = NSEntityDescription.entity(forEntityName: self.entityName, in: taskContext) {
@@ -60,7 +60,7 @@ extension BalanceInteractor {
         }
     }
     
-    func updateBalance(_ amount: Double, isMinus: Bool = false, completion: @escaping (BalanceModel?) -> Void) {
+    public func updateBalance(_ amount: Double, isMinus: Bool = false, completion: @escaping (BalanceModel?) -> Void) {
         guard let taskContext = taskContext else {return}
         taskContext.perform {
             let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: self.entityName)

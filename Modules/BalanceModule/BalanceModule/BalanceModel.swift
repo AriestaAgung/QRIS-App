@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct BalanceModel {
-    let balance: Double?
+public struct BalanceModel {
+    public let balance: Double?
 }

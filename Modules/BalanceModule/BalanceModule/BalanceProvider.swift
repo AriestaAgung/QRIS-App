@@ -8,11 +8,15 @@
 import Foundation
 import CoreData
 
-class BalanceProvider {
-    static let shared = BalanceProvider()
+public class BalanceProvider {
+    public static let shared = BalanceProvider()
+    private let bundle = Bundle(identifier: "com.dcd.BalanceModule")
+    private let name = "BalanceDataModel"
     private lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "BalanceDataModel")
-        container.loadPersistentStores { _, err in
+        let url = self.bundle?.url(forResource: self.name, withExtension: "momd")
+        let mom = NSManagedObjectModel(contentsOf: url!)
+        let container = NSPersistentContainer(name: name, managedObjectModel: mom!)
+        container.loadPersistentStores { t, err in
             guard err == nil else {
                 fatalError("Unresolved Error: \(String(describing: err))")
             }
@@ -26,7 +30,7 @@ class BalanceProvider {
     
     
     
-    func newTaskContext() -> NSManagedObjectContext {
+    public func newTaskContext() -> NSManagedObjectContext {
         let taskContext = persistentContainer.newBackgroundContext()
         taskContext.undoManager = nil
         

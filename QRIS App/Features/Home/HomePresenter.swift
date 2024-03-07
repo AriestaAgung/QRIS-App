@@ -7,6 +7,8 @@
 
 import Foundation
 import UIKit
+import BalanceModule
+
 protocol HomePresenterProtocol {
     func fetchBalance(completion: @escaping (BalanceModel?) -> Void)
     func addBalance(completion: @escaping (BalanceModel?) -> Void)
