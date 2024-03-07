@@ -15,7 +15,8 @@ public class PaymentHistoryViewController: UIViewController {
     private var isLoadingData = true
     public init(presenter: PaymentHistoryPresenter) {
         self.presenter = presenter
-        super.init(nibName: nil, bundle: nil)
+        let bundle = Bundle(identifier: "com.dcd.TransactionHistoryModule")
+        super.init(nibName: nil, bundle: bundle!)
     }
     
     required init?(coder: NSCoder) {

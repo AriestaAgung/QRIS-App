@@ -11,7 +11,8 @@ class PaymentHistoryTableViewCell: UITableViewCell {
 
     @IBOutlet weak var merchantLabel: UILabel!
     @IBOutlet weak var amountLabel: UILabel!
-    static let nib = UINib(nibName: "PaymentHistoryTableViewCell", bundle: nil)
+    
+    static let nib = UINib(nibName: "PaymentHistoryTableViewCell", bundle: Bundle(identifier: "com.dcd.TransactionHistoryModule"))
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

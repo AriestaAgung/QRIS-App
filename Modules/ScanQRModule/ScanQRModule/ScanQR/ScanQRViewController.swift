@@ -15,7 +15,8 @@ public class ScanQRViewController: UIViewController {
     private var presenter: ScanQRPresenter?
     public init(presenter: ScanQRPresenter) {
         self.presenter = presenter
-        super.init(nibName: nil, bundle: nil)
+        let bundle = Bundle(identifier: "com.dcd.ScanQRModule")
+        super.init(nibName: nil, bundle: bundle!)
     }
     
     required init?(coder: NSCoder) {

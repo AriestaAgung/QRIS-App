@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C24B510175E354FF8181BBC2 /* Pods_HomeModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADCBA8ADE3583F922839193 /* Pods_HomeModule.framework */; };
+		EB2FB0322B99BD52002297A8 /* ScanQRModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2FB0312B99BD52002297A8 /* ScanQRModule.framework */; };
+		EB2FB0332B99BD52002297A8 /* ScanQRModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB2FB0312B99BD52002297A8 /* ScanQRModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB9749B92B99B16200540188 /* HomeModule.docc in Sources */ = {isa = PBXBuildFile; fileRef = EB9749B82B99B16200540188 /* HomeModule.docc */; };
 		EB9749BA2B99B16200540188 /* HomeModule.h in Headers */ = {isa = PBXBuildFile; fileRef = EB9749B72B99B16200540188 /* HomeModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB9749C52B99B17500540188 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9749C02B99B17500540188 /* HomeInteractor.swift */; };
@@ -30,6 +32,7 @@
 			files = (
 				EBB97D892B99B6AC00B16518 /* TransactionHistoryModule.framework in Embed Frameworks */,
 				EBB97D862B99B6AB00B16518 /* BalanceModule.framework in Embed Frameworks */,
+				EB2FB0332B99BD52002297A8 /* ScanQRModule.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,6 +43,7 @@
 		BADCBA8ADE3583F922839193 /* Pods_HomeModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FD41CCB8251612AE6EC07E /* Pods-HomeModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeModule.debug.xcconfig"; path = "Target Support Files/Pods-HomeModule/Pods-HomeModule.debug.xcconfig"; sourceTree = "<group>"; };
 		E4598D918B5462F62AFF2A6D /* Pods-HomeModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeModule.release.xcconfig"; path = "Target Support Files/Pods-HomeModule/Pods-HomeModule.release.xcconfig"; sourceTree = "<group>"; };
+		EB2FB0312B99BD52002297A8 /* ScanQRModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ScanQRModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9749B42B99B16200540188 /* HomeModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HomeModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9749B72B99B16200540188 /* HomeModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeModule.h; sourceTree = "<group>"; };
 		EB9749B82B99B16200540188 /* HomeModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = HomeModule.docc; sourceTree = "<group>"; };
@@ -57,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB2FB0322B99BD52002297A8 /* ScanQRModule.framework in Frameworks */,
 				EBB97D882B99B6AC00B16518 /* TransactionHistoryModule.framework in Frameworks */,
 				C24B510175E354FF8181BBC2 /* Pods_HomeModule.framework in Frameworks */,
 				EBB97D852B99B6AB00B16518 /* BalanceModule.framework in Frameworks */,
@@ -69,6 +74,7 @@
 		18DDDCA4D14F9B6CDD8FCA0C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EB2FB0312B99BD52002297A8 /* ScanQRModule.framework */,
 				EBB97D812B99B5BE00B16518 /* BalanceModule.framework */,
 				EBB97D762B99B50200B16518 /* TransactionHistoryModule.framework */,
 				BADCBA8ADE3583F922839193 /* Pods_HomeModule.framework */,

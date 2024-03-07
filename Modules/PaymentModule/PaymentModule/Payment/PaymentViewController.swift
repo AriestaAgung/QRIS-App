@@ -20,7 +20,8 @@ public class PaymentViewController: UIViewController {
     private var presenter: PaymentPresenter?
     public init(presenter: PaymentPresenter) {
         self.presenter = presenter
-        super.init(nibName: nil, bundle: nil)
+        let bundle = Bundle(identifier: "com.dcd.PaymentModule")
+        super.init(nibName: nil, bundle: bundle!)
     }
     
     required init?(coder: NSCoder) {
