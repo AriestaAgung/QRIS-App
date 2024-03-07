@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PaymentViewController: UIViewController {
+public class PaymentViewController: UIViewController {
 
     @IBOutlet weak var transactionIDLabel: UILabel!
     @IBOutlet weak var merchantNameLabel: UILabel!
@@ -18,7 +18,7 @@ class PaymentViewController: UIViewController {
     private var didTapCancel: (() -> Void)?
     private var didTapPay: (() -> Void)?
     private var presenter: PaymentPresenter?
-    init(presenter: PaymentPresenter) {
+    public init(presenter: PaymentPresenter) {
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
     }
@@ -26,7 +26,7 @@ class PaymentViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         

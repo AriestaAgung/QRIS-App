@@ -14,25 +14,25 @@ protocol PaymentPresenterProtocol {
     func goToHome(nav: UINavigationController)
 }
 
-class PaymentPresenter {
+public class PaymentPresenter {
     private var router: PaymentRouter?
     private var interactor: PaymentInteractor?
     private var data: PaymentModel?
-    init(router: PaymentRouter? = nil, interactor: PaymentInteractor? = nil, data: PaymentModel? = nil) {
+    public init(router: PaymentRouter? = nil, interactor: PaymentInteractor? = nil, data: PaymentModel? = nil) {
         self.router = router
         self.interactor = interactor
         self.data = data
     }
     
-    func getData() -> PaymentModel? {data}
+    public func getData() -> PaymentModel? {data}
     
-    func pay(nav: UINavigationController, data: PaymentModel) {
+    public func pay(nav: UINavigationController, data: PaymentModel) {
         interactor?.pay(data: data, completion: { bal in
             self.router?.goToHome(nav: nav)
         })
     }
     
-    func goToHome(nav: UINavigationController) {
+    public func goToHome(nav: UINavigationController) {
         self.router?.goToHome(nav: nav)
     }
 }

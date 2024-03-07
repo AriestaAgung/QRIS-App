@@ -8,15 +8,21 @@
       location = "group:Modules/HomeModule/HomeModule.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Modules/PaymentModule/PaymentModule.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:QRIS App.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Modules/TransactionModule/TransactionModule.xcodeproj">
+      location = "group:Modules/ScanQRModule/ScanQRModule.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Modules/TransactionHistoryModule/TransactionHistoryModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/TransactionModule/TransactionModule.xcodeproj">
    </FileRef>
 </Workspace>

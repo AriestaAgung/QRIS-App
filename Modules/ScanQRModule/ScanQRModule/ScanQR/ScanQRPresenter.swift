@@ -7,18 +7,19 @@
 
 import Foundation
 import UIKit
+import PaymentModule
 
 protocol ScanQRPresenterProtocol {
     func goToPayment(nav: UINavigationController, data: PaymentModel)
 }
 
-class ScanQRPresenter: ScanQRPresenterProtocol {
+public class ScanQRPresenter: ScanQRPresenterProtocol {
     private var router: ScanQRRouter?
-    init(router: ScanQRRouter? = nil) {
+    public init(router: ScanQRRouter? = nil) {
         self.router = router
     }
     
-    func goToPayment(nav: UINavigationController, data: PaymentModel) {
+    public func goToPayment(nav: UINavigationController, data: PaymentModel) {
         if let vc = router?.goToPayment(data: data) {
             nav.pushViewController(vc, animated: true)
         }

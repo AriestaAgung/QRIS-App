@@ -7,15 +7,16 @@
 
 import Foundation
 import BalanceModule
+import TransactionModule
 
 protocol PaymentUseCase {
     func pay(data: PaymentModel, completion: @escaping (BalanceModel?) -> Void)
 }
 
-class PaymentInteractor: PaymentUseCase {
-    static let shared = PaymentInteractor()
+public class PaymentInteractor: PaymentUseCase {
+    public static let shared = PaymentInteractor()
     
-    func pay(data: PaymentModel, completion: @escaping (BalanceModel?) -> Void) {
+    public func pay(data: PaymentModel, completion: @escaping (BalanceModel?) -> Void) {
         BalanceInteractor.shared.updateBalance(data.amount ?? 0, isMinus: true, completion: { bal in
             let transaction = TransactionModel(
                 transactionId: data.id,

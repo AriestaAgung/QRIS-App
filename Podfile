@@ -29,6 +29,14 @@ target 'TransactionHistoryModule' do
     project 'Modules/TransactionHistoryModule/TransactionHistoryModule'
 end
 
+target 'ScanQRModule' do
+  project 'Modules/ScanQRModule/ScanQRModule'
+end
+
+target 'PaymentModule' do
+  project 'Modules/PaymentModule/PaymentModule'
+end
+  
 target 'BalanceModule' do
   project 'Modules/BalanceModule/BalanceModule'
 end

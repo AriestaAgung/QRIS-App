@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		207A97378E4711D037CF47C2 /* Pods_ScanQRModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8CD397932CAE5869C5E76E5 /* Pods_ScanQRModule.framework */; };
+		EB11383A2B99BA8700C521D6 /* PaymentModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1138392B99BA8700C521D6 /* PaymentModule.framework */; };
+		EB11383B2B99BA8700C521D6 /* PaymentModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB1138392B99BA8700C521D6 /* PaymentModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBB97D992B99B74C00B16518 /* ScanQRModule.docc in Sources */ = {isa = PBXBuildFile; fileRef = EBB97D982B99B74C00B16518 /* ScanQRModule.docc */; };
+		EBB97D9A2B99B74D00B16518 /* ScanQRModule.h in Headers */ = {isa = PBXBuildFile; fileRef = EBB97D972B99B74C00B16518 /* ScanQRModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBB97DAC2B99B76100B16518 /* ScanQRPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB97DA32B99B76100B16518 /* ScanQRPresenter.swift */; };
+		EBB97DAD2B99B76100B16518 /* ScanQRRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB97DA42B99B76100B16518 /* ScanQRRouter.swift */; };
+		EBB97DAE2B99B76100B16518 /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB97DA52B99B76100B16518 /* ScanQRViewController.swift */; };
+		EBB97DAF2B99B76100B16518 /* ScanQRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBB97DA62B99B76100B16518 /* ScanQRViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EB11383C2B99BA8700C521D6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EB11383B2B99BA8700C521D6 /* PaymentModule.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A5654F3902A7306E0E3BC531 /* Pods-ScanQRModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanQRModule.debug.xcconfig"; path = "Target Support Files/Pods-ScanQRModule/Pods-ScanQRModule.debug.xcconfig"; sourceTree = "<group>"; };
+		D8CD397932CAE5869C5E76E5 /* Pods_ScanQRModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScanQRModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5F81DC4B27631F13E54D5EC /* Pods-ScanQRModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanQRModule.release.xcconfig"; path = "Target Support Files/Pods-ScanQRModule/Pods-ScanQRModule.release.xcconfig"; sourceTree = "<group>"; };
+		EB1138392B99BA8700C521D6 /* PaymentModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PaymentModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB97D942B99B74C00B16518 /* ScanQRModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScanQRModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB97D972B99B74C00B16518 /* ScanQRModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanQRModule.h; sourceTree = "<group>"; };
+		EBB97D982B99B74C00B16518 /* ScanQRModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ScanQRModule.docc; sourceTree = "<group>"; };
+		EBB97DA32B99B76100B16518 /* ScanQRPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanQRPresenter.swift; sourceTree = "<group>"; };
+		EBB97DA42B99B76100B16518 /* ScanQRRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanQRRouter.swift; sourceTree = "<group>"; };
+		EBB97DA52B99B76100B16518 /* ScanQRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
+		EBB97DA62B99B76100B16518 /* ScanQRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanQRViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBB97D912B99B74C00B16518 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				207A97378E4711D037CF47C2 /* Pods_ScanQRModule.framework in Frameworks */,
+				EB11383A2B99BA8700C521D6 /* PaymentModule.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA5345803D9FE204D4FCE130 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5654F3902A7306E0E3BC531 /* Pods-ScanQRModule.debug.xcconfig */,
+				E5F81DC4B27631F13E54D5EC /* Pods-ScanQRModule.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
+			sourceTree = "<group>";
+		};
+		EBB97D8A2B99B74C00B16518 = {
+			isa = PBXGroup;
+			children = (
+				EBB97D962B99B74C00B16518 /* ScanQRModule */,
+				EBB97D952B99B74C00B16518 /* Products */,
+				BA5345803D9FE204D4FCE130 /* Pods */,
+				FDEAE19928ACA8EB730F477B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EBB97D952B99B74C00B16518 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBB97D942B99B74C00B16518 /* ScanQRModule.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBB97D962B99B74C00B16518 /* ScanQRModule */ = {
+			isa = PBXGroup;
+			children = (
+				EBB97DA72B99B76100B16518 /* ScanQR */,
+				EBB97D972B99B74C00B16518 /* ScanQRModule.h */,
+				EBB97D982B99B74C00B16518 /* ScanQRModule.docc */,
+			);
+			path = ScanQRModule;
+			sourceTree = "<group>";
+		};
+		EBB97DA72B99B76100B16518 /* ScanQR */ = {
+			isa = PBXGroup;
+			children = (
+				EBB97DA32B99B76100B16518 /* ScanQRPresenter.swift */,
+				EBB97DA42B99B76100B16518 /* ScanQRRouter.swift */,
+				EBB97DA52B99B76100B16518 /* ScanQRViewController.swift */,
+				EBB97DA62B99B76100B16518 /* ScanQRViewController.xib */,
+			);
+			path = ScanQR;
+			sourceTree = "<group>";
+		};
+		FDEAE19928ACA8EB730F477B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB1138392B99BA8700C521D6 /* PaymentModule.framework */,
+				D8CD397932CAE5869C5E76E5 /* Pods_ScanQRModule.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EBB97D8F2B99B74C00B16518 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB97D9A2B99B74D00B16518 /* ScanQRModule.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EBB97D932B99B74C00B16518 /* ScanQRModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBB97D9D2B99B74D00B16518 /* Build configuration list for PBXNativeTarget "ScanQRModule" */;
+			buildPhases = (
+				A9239FC9E487CD890883CF3A /* [CP] Check Pods Manifest.lock */,
+				EBB97D8F2B99B74C00B16518 /* Headers */,
+				EBB97D902B99B74C00B16518 /* Sources */,
+				EBB97D912B99B74C00B16518 /* Frameworks */,
+				EBB97D922B99B74C00B16518 /* Resources */,
+				EB11383C2B99BA8700C521D6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScanQRModule;
+			productName = ScanQRModule;
+			productReference = EBB97D942B99B74C00B16518 /* ScanQRModule.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBB97D8B2B99B74C00B16518 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					EBB97D932B99B74C00B16518 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = EBB97D8E2B99B74C00B16518 /* Build configuration list for PBXProject "ScanQRModule" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBB97D8A2B99B74C00B16518;
+			productRefGroup = EBB97D952B99B74C00B16518 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBB97D932B99B74C00B16518 /* ScanQRModule */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBB97D922B99B74C00B16518 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB97DAF2B99B76100B16518 /* ScanQRViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A9239FC9E487CD890883CF3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScanQRModule-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBB97D902B99B74C00B16518 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB97DAD2B99B76100B16518 /* ScanQRRouter.swift in Sources */,
+				EBB97DAE2B99B76100B16518 /* ScanQRViewController.swift in Sources */,
+				EBB97DAC2B99B76100B16518 /* ScanQRPresenter.swift in Sources */,
+				EBB97D992B99B74C00B16518 /* ScanQRModule.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EBB97D9B2B99B74D00B16518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EBB97D9C2B99B74D00B16518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EBB97D9E2B99B74D00B16518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5654F3902A7306E0E3BC531 /* Pods-ScanQRModule.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.ScanQRModule;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBB97D9F2B99B74D00B16518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5F81DC4B27631F13E54D5EC /* Pods-ScanQRModule.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.ScanQRModule;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBB97D8E2B99B74C00B16518 /* Build configuration list for PBXProject "ScanQRModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBB97D9B2B99B74D00B16518 /* Debug */,
+				EBB97D9C2B99B74D00B16518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBB97D9D2B99B74D00B16518 /* Build configuration list for PBXNativeTarget "ScanQRModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBB97D9E2B99B74D00B16518 /* Debug */,
+				EBB97D9F2B99B74D00B16518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBB97D8B2B99B74C00B16518 /* Project object */;
+}

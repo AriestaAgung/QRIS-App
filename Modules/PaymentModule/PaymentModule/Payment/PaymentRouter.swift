@@ -12,10 +12,10 @@ protocol PaymentRouterProtocol {
     func goToHome(nav: UINavigationController)
 }
 
-class PaymentRouter: PaymentRouterProtocol {
-    static let shared = PaymentRouter()
+public class PaymentRouter: PaymentRouterProtocol {
+    public static let shared = PaymentRouter()
     
-    func goToHome(nav: UINavigationController) {
+    public func goToHome(nav: UINavigationController) {
         DispatchQueue.main.async {
             nav.popToRootViewController(animated: true)            
         }

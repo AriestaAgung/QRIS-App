@@ -22,7 +22,8 @@ public class HomeViewController: UIViewController {
     private var paymentHistoryDidTap: (() -> Void)?
     init(presenter: HomePresenter) {
         self.presenter = presenter
-        super.init(nibName: nil, bundle: nil)
+        let bundle = Bundle(identifier: "com.dcd.HomeModule")
+        super.init(nibName: nil, bundle: bundle!)
     }
     
     required init?(coder: NSCoder) {

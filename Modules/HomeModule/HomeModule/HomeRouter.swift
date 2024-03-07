@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import TransactionModule
 import TransactionHistoryModule
+import ScanQRModule
 
 protocol HomeRouterProtocol {
     func goToHome() -> HomeViewController

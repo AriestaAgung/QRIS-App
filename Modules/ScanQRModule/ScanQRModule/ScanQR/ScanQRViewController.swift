@@ -7,12 +7,13 @@
 
 import UIKit
 import AVFoundation
+import PaymentModule
 
-class ScanQRViewController: UIViewController {
+public class ScanQRViewController: UIViewController {
     private var session: AVCaptureSession!
     private var preview: AVCaptureVideoPreviewLayer!
     private var presenter: ScanQRPresenter?
-    init(presenter: ScanQRPresenter) {
+    public init(presenter: ScanQRPresenter) {
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
     }
@@ -21,12 +22,12 @@ class ScanQRViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         
     }
-    override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if session?.isRunning == false {
             DispatchQueue.global().async {
@@ -35,7 +36,7 @@ class ScanQRViewController: UIViewController {
         }
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
+    override public func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         if session?.isRunning == true {
             session.stopRunning()
@@ -103,11 +104,11 @@ class ScanQRViewController: UIViewController {
 }
 
 extension ScanQRViewController: AVCaptureMetadataOutputObjectsDelegate {
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+    public override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait
     }
     
-    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+    public func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         session.stopRunning()
         if let metadataObject = metadataObjects.first {
             guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
