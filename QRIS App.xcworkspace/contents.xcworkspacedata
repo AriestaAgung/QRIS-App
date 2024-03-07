@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Modules/ScanQRModule/ScanQRModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/PaymentHistoryModule/PaymentHistoryModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/PaymentModule/PaymentModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/HomeModule/HomeModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/BalanceModule/BalanceModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:QRIS App.xcodeproj">
+   </FileRef>
+</Workspace>
