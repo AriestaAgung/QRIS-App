@@ -5,9 +5,12 @@
       location = "group:Modules/BalanceModule/BalanceModule.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:QRIS App.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Pods/Pods.xcodeproj">
+      location = "group:Modules/TransactionModule/TransactionModule.xcodeproj">
    </FileRef>
 </Workspace>

@@ -12,6 +12,8 @@
 		E38DD46EBF71758715F8D4EB /* Pods_QRIS_App_QRIS_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC572A50356DDD6E5C313218 /* Pods_QRIS_App_QRIS_AppUITests.framework */; };
 		EB2FDF832B99797F00EB8F82 /* BalanceModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2FDF822B99797F00EB8F82 /* BalanceModule.framework */; };
 		EB2FDF842B99797F00EB8F82 /* BalanceModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB2FDF822B99797F00EB8F82 /* BalanceModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EB9749A82B99B0DB00540188 /* TransactionModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9749A72B99B0DB00540188 /* TransactionModule.framework */; };
+		EB9749A92B99B0DB00540188 /* TransactionModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB9749A72B99B0DB00540188 /* TransactionModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EBD7FBC52B616A6800C850BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBC42B616A6800C850BA /* AppDelegate.swift */; };
 		EBD7FBC72B616A6800C850BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBC62B616A6800C850BA /* SceneDelegate.swift */; };
 		EBD7FBCE2B616A6A00C850BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD7FBCD2B616A6A00C850BA /* Assets.xcassets */; };
@@ -34,10 +36,6 @@
 		EBD7FC1F2B62498000C850BA /* PaymentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC1E2B62498000C850BA /* PaymentPresenter.swift */; };
 		EBD7FC212B62498900C850BA /* PaymentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC202B62498900C850BA /* PaymentInteractor.swift */; };
 		EBD7FC232B6249A000C850BA /* PaymentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC222B6249A000C850BA /* PaymentRouter.swift */; };
-		EBD7FC282B625CF600C850BA /* TransactionDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC262B625CF600C850BA /* TransactionDataModel.xcdatamodeld */; };
-		EBD7FC2A2B625D3600C850BA /* TransactionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC292B625D3600C850BA /* TransactionProvider.swift */; };
-		EBD7FC2C2B625D6100C850BA /* TransactionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC2B2B625D6100C850BA /* TransactionInteractor.swift */; };
-		EBD7FC2E2B625E0A00C850BA /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC2D2B625E0A00C850BA /* TransactionModel.swift */; };
 		EBD7FC322B626BBB00C850BA /* PaymentHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC302B626BBB00C850BA /* PaymentHistoryViewController.swift */; };
 		EBD7FC332B626BBB00C850BA /* PaymentHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD7FC312B626BBB00C850BA /* PaymentHistoryViewController.xib */; };
 		EBD7FC352B626BD000C850BA /* PaymentHistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC342B626BD000C850BA /* PaymentHistoryPresenter.swift */; };
@@ -72,6 +70,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				EB2FDF842B99797F00EB8F82 /* BalanceModule.framework in Embed Frameworks */,
+				EB9749A92B99B0DB00540188 /* TransactionModule.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,6 +87,7 @@
 		D1C16A1CFD73F17735100D6A /* Pods-QRIS App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRIS App.debug.xcconfig"; path = "Target Support Files/Pods-QRIS App/Pods-QRIS App.debug.xcconfig"; sourceTree = "<group>"; };
 		D985C8D0AD85FC144E634CD8 /* Pods_QRIS_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRIS_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2FDF822B99797F00EB8F82 /* BalanceModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BalanceModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9749A72B99B0DB00540188 /* TransactionModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TransactionModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD7FBC12B616A6800C850BA /* QRIS App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QRIS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD7FBC42B616A6800C850BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD7FBC62B616A6800C850BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,10 +114,6 @@
 		EBD7FC1E2B62498000C850BA /* PaymentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentPresenter.swift; sourceTree = "<group>"; };
 		EBD7FC202B62498900C850BA /* PaymentInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentInteractor.swift; sourceTree = "<group>"; };
 		EBD7FC222B6249A000C850BA /* PaymentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentRouter.swift; sourceTree = "<group>"; };
-		EBD7FC272B625CF600C850BA /* TransactionDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TransactionDataModel.xcdatamodel; sourceTree = "<group>"; };
-		EBD7FC292B625D3600C850BA /* TransactionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionProvider.swift; sourceTree = "<group>"; };
-		EBD7FC2B2B625D6100C850BA /* TransactionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionInteractor.swift; sourceTree = "<group>"; };
-		EBD7FC2D2B625E0A00C850BA /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		EBD7FC302B626BBB00C850BA /* PaymentHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryViewController.swift; sourceTree = "<group>"; };
 		EBD7FC312B626BBB00C850BA /* PaymentHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentHistoryViewController.xib; sourceTree = "<group>"; };
 		EBD7FC342B626BD000C850BA /* PaymentHistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryPresenter.swift; sourceTree = "<group>"; };
@@ -135,6 +131,7 @@
 			files = (
 				AB93A660A8C00C4B12540ED3 /* Pods_QRIS_App.framework in Frameworks */,
 				EB2FDF832B99797F00EB8F82 /* BalanceModule.framework in Frameworks */,
+				EB9749A82B99B0DB00540188 /* TransactionModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +170,7 @@
 		B31FFCC9723607FA94E2D9AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EB9749A72B99B0DB00540188 /* TransactionModule.framework */,
 				EB2FDF822B99797F00EB8F82 /* BalanceModule.framework */,
 				D985C8D0AD85FC144E634CD8 /* Pods_QRIS_App.framework */,
 				CC572A50356DDD6E5C313218 /* Pods_QRIS_App_QRIS_AppUITests.framework */,
@@ -245,7 +243,6 @@
 			isa = PBXGroup;
 			children = (
 				EBD7FC2F2B626BA900C850BA /* PaymentHistory */,
-				EBD7FC252B625CE500C850BA /* TransactionEntity */,
 				EBD7FC132B623B5B00C850BA /* Payment */,
 				EBD7FBFB2B61745400C850BA /* ScanQR */,
 				EBD7FBF62B61720500C850BA /* Home */,
@@ -287,17 +284,6 @@
 				EBD7FC202B62498900C850BA /* PaymentInteractor.swift */,
 			);
 			path = Payment;
-			sourceTree = "<group>";
-		};
-		EBD7FC252B625CE500C850BA /* TransactionEntity */ = {
-			isa = PBXGroup;
-			children = (
-				EBD7FC262B625CF600C850BA /* TransactionDataModel.xcdatamodeld */,
-				EBD7FC292B625D3600C850BA /* TransactionProvider.swift */,
-				EBD7FC2B2B625D6100C850BA /* TransactionInteractor.swift */,
-				EBD7FC2D2B625E0A00C850BA /* TransactionModel.swift */,
-			);
-			path = TransactionEntity;
 			sourceTree = "<group>";
 		};
 		EBD7FC2F2B626BA900C850BA /* PaymentHistory */ = {
@@ -533,14 +519,11 @@
 				EBD7FBC52B616A6800C850BA /* AppDelegate.swift in Sources */,
 				EBD7FBC72B616A6800C850BA /* SceneDelegate.swift in Sources */,
 				EBD7FC232B6249A000C850BA /* PaymentRouter.swift in Sources */,
-				EBD7FC2E2B625E0A00C850BA /* TransactionModel.swift in Sources */,
 				EBD7FC152B623DAB00C850BA /* ScanQRPresenter.swift in Sources */,
-				EBD7FC2A2B625D3600C850BA /* TransactionProvider.swift in Sources */,
 				EBD7FC422B62783300C850BA /* PaymentHistoryTableViewCell.swift in Sources */,
 				EBD7FC372B626BE800C850BA /* PaymentHistoryRouter.swift in Sources */,
 				EBD7FC1A2B6245CA00C850BA /* PaymentViewController.swift in Sources */,
 				EBD7FC322B626BBB00C850BA /* PaymentHistoryViewController.swift in Sources */,
-				EBD7FC282B625CF600C850BA /* TransactionDataModel.xcdatamodeld in Sources */,
 				EBD7FC1F2B62498000C850BA /* PaymentPresenter.swift in Sources */,
 				EBD7FC1D2B6248EA00C850BA /* PaymentModel.swift in Sources */,
 				EBD7FC352B626BD000C850BA /* PaymentHistoryPresenter.swift in Sources */,
@@ -552,7 +535,6 @@
 				EBD7FBFF2B61769500C850BA /* HomeInteractor.swift in Sources */,
 				EBD7FBFD2B61762700C850BA /* HomePresenter.swift in Sources */,
 				EBD7FC0E2B6183E100C850BA /* HomeRouter.swift in Sources */,
-				EBD7FC2C2B625D6100C850BA /* TransactionInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -903,19 +885,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		EBD7FC262B625CF600C850BA /* TransactionDataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				EBD7FC272B625CF600C850BA /* TransactionDataModel.xcdatamodel */,
-			);
-			currentVersion = EBD7FC272B625CF600C850BA /* TransactionDataModel.xcdatamodel */;
-			path = TransactionDataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = EBD7FBB92B616A6800C850BA /* Project object */;
 }

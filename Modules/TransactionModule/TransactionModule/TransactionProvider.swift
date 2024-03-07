@@ -10,7 +10,11 @@ import CoreData
 class TransactionProvider {
     static let shared = TransactionProvider()
     private lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "TransactionDataModel")
+        let bundle = Bundle(identifier: "com.dcd.TransactionModule")
+        let name = "TransactionDataModel"
+        let url = bundle?.url(forResource: name, withExtension: "momd")
+        let mom = NSManagedObjectModel(contentsOf: url!)
+        let container = NSPersistentContainer(name: "TransactionDataModel",managedObjectModel: mom!)
         container.loadPersistentStores { _, err in
             guard err == nil else {
                 fatalError("Unresolved Error: \(String(describing: err))")

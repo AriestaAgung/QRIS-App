@@ -24,3 +24,8 @@ end
 target 'BalanceModule' do
   project 'Modules/BalanceModule/BalanceModule'
 end
+
+target 'TransactionModule' do
+    project 'Modules/TransactionModule/TransactionModule'
+end
+
