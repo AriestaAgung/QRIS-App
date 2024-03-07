@@ -63,6 +63,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6A2309352B9874860050AF6C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		EBD7FBC12B616A6800C850BA /* QRIS App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QRIS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD7FBC42B616A6800C850BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +145,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A2309322B9874860050AF6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EBD7FBB82B616A6800C850BA = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +159,7 @@
 				EBD7FBDA2B616A6A00C850BA /* QRIS AppTests */,
 				EBD7FBE42B616A6A00C850BA /* QRIS AppUITests */,
 				EBD7FBC22B616A6800C850BA /* Products */,
+				6A2309322B9874860050AF6C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -293,6 +314,7 @@
 				EBD7FBBD2B616A6800C850BA /* Sources */,
 				EBD7FBBE2B616A6800C850BA /* Frameworks */,
 				EBD7FBBF2B616A6800C850BA /* Resources */,
+				6A2309352B9874860050AF6C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -618,7 +640,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				DEVELOPMENT_TEAM = S2L48UD9HD;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "QRIS App/App/Info.plist";
@@ -648,7 +670,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R2D4D7YLB2;
+				DEVELOPMENT_TEAM = S2L48UD9HD;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "QRIS App/App/Info.plist";
