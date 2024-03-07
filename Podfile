@@ -25,6 +25,10 @@ target 'HomeModule' do
   project 'Modules/HomeModule/HomeModule'
 end
 
+target 'TransactionHistoryModule' do
+    project 'Modules/TransactionHistoryModule/TransactionHistoryModule'
+end
+
 target 'BalanceModule' do
   project 'Modules/BalanceModule/BalanceModule'
 end

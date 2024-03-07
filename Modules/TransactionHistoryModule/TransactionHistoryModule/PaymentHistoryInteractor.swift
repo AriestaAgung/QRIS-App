@@ -15,7 +15,7 @@ protocol PaymentHistoryUseCase {
 public class PaymentHistoryInteractor: PaymentHistoryUseCase {
     public static let shared = PaymentHistoryInteractor()
     
-    func getTransaction(completion: @escaping ([TransactionModel?]) -> Void) {
+    public func getTransaction(completion: @escaping ([TransactionModel?]) -> Void) {
         TransactionInteractor.shared.getTransaction { transactions in
             completion(transactions)
         }

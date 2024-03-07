@@ -7,29 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C24B510175E354FF8181BBC2 /* Pods_HomeModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADCBA8ADE3583F922839193 /* Pods_HomeModule.framework */; };
-		EB9749B92B99B16200540188 /* HomeModule.docc in Sources */ = {isa = PBXBuildFile; fileRef = EB9749B82B99B16200540188 /* HomeModule.docc */; };
-		EB9749BA2B99B16200540188 /* HomeModule.h in Headers */ = {isa = PBXBuildFile; fileRef = EB9749B72B99B16200540188 /* HomeModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EB9749C52B99B17500540188 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9749C02B99B17500540188 /* HomeInteractor.swift */; };
-		EB9749C62B99B17500540188 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB9749C12B99B17500540188 /* HomeViewController.xib */; };
-		EB9749C72B99B17500540188 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9749C22B99B17500540188 /* HomeViewController.swift */; };
-		EB9749C82B99B17500540188 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9749C32B99B17500540188 /* HomePresenter.swift */; };
-		EB9749C92B99B17500540188 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9749C42B99B17500540188 /* HomeRouter.swift */; };
-		EBB97D852B99B6AB00B16518 /* BalanceModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB97D812B99B5BE00B16518 /* BalanceModule.framework */; };
-		EBB97D862B99B6AB00B16518 /* BalanceModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBB97D812B99B5BE00B16518 /* BalanceModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EBB97D882B99B6AC00B16518 /* TransactionHistoryModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB97D762B99B50200B16518 /* TransactionHistoryModule.framework */; };
-		EBB97D892B99B6AC00B16518 /* TransactionHistoryModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBB97D762B99B50200B16518 /* TransactionHistoryModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		79EF5739459DA1C8D3ED9D57 /* Pods_TransactionHistoryModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25CCF85D08E93B1CB4766F0 /* Pods_TransactionHistoryModule.framework */; };
+		EB9749D92B99B37B00540188 /* TransactionHistoryModule.docc in Sources */ = {isa = PBXBuildFile; fileRef = EB9749D82B99B37B00540188 /* TransactionHistoryModule.docc */; };
+		EB9749DA2B99B37B00540188 /* TransactionHistoryModule.h in Headers */ = {isa = PBXBuildFile; fileRef = EB9749D72B99B37B00540188 /* TransactionHistoryModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBB97D7E2B99B5A400B16518 /* TransactionModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB97D7D2B99B5A400B16518 /* TransactionModule.framework */; };
+		EBB97D7F2B99B5A400B16518 /* TransactionModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBB97D7D2B99B5A400B16518 /* TransactionModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBED862B2B99B3EE00684F71 /* PaymentHistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED86232B99B3ED00684F71 /* PaymentHistoryPresenter.swift */; };
+		EBED862C2B99B3EE00684F71 /* PaymentHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBED86242B99B3ED00684F71 /* PaymentHistoryViewController.xib */; };
+		EBED862D2B99B3EE00684F71 /* PaymentHistoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED86252B99B3ED00684F71 /* PaymentHistoryInteractor.swift */; };
+		EBED862E2B99B3EE00684F71 /* PaymentHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED86262B99B3ED00684F71 /* PaymentHistoryViewController.swift */; };
+		EBED862F2B99B3EE00684F71 /* PaymentHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED86272B99B3EE00684F71 /* PaymentHistoryTableViewCell.swift */; };
+		EBED86302B99B3EE00684F71 /* PaymentHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBED86282B99B3EE00684F71 /* PaymentHistoryTableViewCell.xib */; };
+		EBED86312B99B3EE00684F71 /* PaymentHistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED862A2B99B3EE00684F71 /* PaymentHistoryRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		EBB97D872B99B6AB00B16518 /* Embed Frameworks */ = {
+		EBB97D802B99B5A400B16518 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EBB97D892B99B6AC00B16518 /* TransactionHistoryModule.framework in Embed Frameworks */,
-				EBB97D862B99B6AB00B16518 /* BalanceModule.framework in Embed Frameworks */,
+				EBB97D7F2B99B5A400B16518 /* TransactionModule.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,136 +36,145 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BADCBA8ADE3583F922839193 /* Pods_HomeModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0FD41CCB8251612AE6EC07E /* Pods-HomeModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeModule.debug.xcconfig"; path = "Target Support Files/Pods-HomeModule/Pods-HomeModule.debug.xcconfig"; sourceTree = "<group>"; };
-		E4598D918B5462F62AFF2A6D /* Pods-HomeModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeModule.release.xcconfig"; path = "Target Support Files/Pods-HomeModule/Pods-HomeModule.release.xcconfig"; sourceTree = "<group>"; };
-		EB9749B42B99B16200540188 /* HomeModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HomeModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB9749B72B99B16200540188 /* HomeModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeModule.h; sourceTree = "<group>"; };
-		EB9749B82B99B16200540188 /* HomeModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = HomeModule.docc; sourceTree = "<group>"; };
-		EB9749C02B99B17500540188 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
-		EB9749C12B99B17500540188 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		EB9749C22B99B17500540188 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		EB9749C32B99B17500540188 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
-		EB9749C42B99B17500540188 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
-		EBB97D762B99B50200B16518 /* TransactionHistoryModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TransactionHistoryModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBB97D812B99B5BE00B16518 /* BalanceModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BalanceModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A11F42F53FACC9E22AF01538 /* Pods-TransactionHistoryModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransactionHistoryModule.release.xcconfig"; path = "Target Support Files/Pods-TransactionHistoryModule/Pods-TransactionHistoryModule.release.xcconfig"; sourceTree = "<group>"; };
+		AC0BB48587AF58BA71D50B18 /* Pods-TransactionHistoryModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransactionHistoryModule.debug.xcconfig"; path = "Target Support Files/Pods-TransactionHistoryModule/Pods-TransactionHistoryModule.debug.xcconfig"; sourceTree = "<group>"; };
+		EB9749D42B99B37B00540188 /* TransactionHistoryModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TransactionHistoryModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9749D72B99B37B00540188 /* TransactionHistoryModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionHistoryModule.h; sourceTree = "<group>"; };
+		EB9749D82B99B37B00540188 /* TransactionHistoryModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TransactionHistoryModule.docc; sourceTree = "<group>"; };
+		EBB97D7D2B99B5A400B16518 /* TransactionModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TransactionModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBED86232B99B3ED00684F71 /* PaymentHistoryPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentHistoryPresenter.swift; sourceTree = "<group>"; };
+		EBED86242B99B3ED00684F71 /* PaymentHistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentHistoryViewController.xib; sourceTree = "<group>"; };
+		EBED86252B99B3ED00684F71 /* PaymentHistoryInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentHistoryInteractor.swift; sourceTree = "<group>"; };
+		EBED86262B99B3ED00684F71 /* PaymentHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentHistoryViewController.swift; sourceTree = "<group>"; };
+		EBED86272B99B3EE00684F71 /* PaymentHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		EBED86282B99B3EE00684F71 /* PaymentHistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentHistoryTableViewCell.xib; sourceTree = "<group>"; };
+		EBED862A2B99B3EE00684F71 /* PaymentHistoryRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentHistoryRouter.swift; sourceTree = "<group>"; };
+		F25CCF85D08E93B1CB4766F0 /* Pods_TransactionHistoryModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransactionHistoryModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EB9749B12B99B16200540188 /* Frameworks */ = {
+		EB9749D12B99B37B00540188 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBB97D882B99B6AC00B16518 /* TransactionHistoryModule.framework in Frameworks */,
-				C24B510175E354FF8181BBC2 /* Pods_HomeModule.framework in Frameworks */,
-				EBB97D852B99B6AB00B16518 /* BalanceModule.framework in Frameworks */,
+				79EF5739459DA1C8D3ED9D57 /* Pods_TransactionHistoryModule.framework in Frameworks */,
+				EBB97D7E2B99B5A400B16518 /* TransactionModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18DDDCA4D14F9B6CDD8FCA0C /* Frameworks */ = {
+		509BA46DB5AF3BDACA5A7D91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EBB97D812B99B5BE00B16518 /* BalanceModule.framework */,
-				EBB97D762B99B50200B16518 /* TransactionHistoryModule.framework */,
-				BADCBA8ADE3583F922839193 /* Pods_HomeModule.framework */,
+				EBB97D7D2B99B5A400B16518 /* TransactionModule.framework */,
+				F25CCF85D08E93B1CB4766F0 /* Pods_TransactionHistoryModule.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7777964E09280C85D2ECED73 /* Pods */ = {
+		9DB37C19499D2D560BE94FA3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D0FD41CCB8251612AE6EC07E /* Pods-HomeModule.debug.xcconfig */,
-				E4598D918B5462F62AFF2A6D /* Pods-HomeModule.release.xcconfig */,
+				AC0BB48587AF58BA71D50B18 /* Pods-TransactionHistoryModule.debug.xcconfig */,
+				A11F42F53FACC9E22AF01538 /* Pods-TransactionHistoryModule.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../../Pods;
 			sourceTree = "<group>";
 		};
-		EB9749AA2B99B16200540188 = {
+		EB9749CA2B99B37B00540188 = {
 			isa = PBXGroup;
 			children = (
-				EB9749B62B99B16200540188 /* HomeModule */,
-				EB9749B52B99B16200540188 /* Products */,
-				7777964E09280C85D2ECED73 /* Pods */,
-				18DDDCA4D14F9B6CDD8FCA0C /* Frameworks */,
+				EB9749D62B99B37B00540188 /* TransactionHistoryModule */,
+				EB9749D52B99B37B00540188 /* Products */,
+				9DB37C19499D2D560BE94FA3 /* Pods */,
+				509BA46DB5AF3BDACA5A7D91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		EB9749B52B99B16200540188 /* Products */ = {
+		EB9749D52B99B37B00540188 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB9749B42B99B16200540188 /* HomeModule.framework */,
+				EB9749D42B99B37B00540188 /* TransactionHistoryModule.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EB9749B62B99B16200540188 /* HomeModule */ = {
+		EB9749D62B99B37B00540188 /* TransactionHistoryModule */ = {
 			isa = PBXGroup;
 			children = (
-				EB9749C02B99B17500540188 /* HomeInteractor.swift */,
-				EB9749C32B99B17500540188 /* HomePresenter.swift */,
-				EB9749C42B99B17500540188 /* HomeRouter.swift */,
-				EB9749C22B99B17500540188 /* HomeViewController.swift */,
-				EB9749C12B99B17500540188 /* HomeViewController.xib */,
-				EB9749B72B99B16200540188 /* HomeModule.h */,
-				EB9749B82B99B16200540188 /* HomeModule.docc */,
+				EBED86292B99B3EE00684F71 /* Cell */,
+				EBED86252B99B3ED00684F71 /* PaymentHistoryInteractor.swift */,
+				EBED86232B99B3ED00684F71 /* PaymentHistoryPresenter.swift */,
+				EBED862A2B99B3EE00684F71 /* PaymentHistoryRouter.swift */,
+				EBED86262B99B3ED00684F71 /* PaymentHistoryViewController.swift */,
+				EBED86242B99B3ED00684F71 /* PaymentHistoryViewController.xib */,
+				EB9749D72B99B37B00540188 /* TransactionHistoryModule.h */,
+				EB9749D82B99B37B00540188 /* TransactionHistoryModule.docc */,
 			);
-			path = HomeModule;
+			path = TransactionHistoryModule;
+			sourceTree = "<group>";
+		};
+		EBED86292B99B3EE00684F71 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EBED86272B99B3EE00684F71 /* PaymentHistoryTableViewCell.swift */,
+				EBED86282B99B3EE00684F71 /* PaymentHistoryTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		EB9749AF2B99B16200540188 /* Headers */ = {
+		EB9749CF2B99B37B00540188 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB9749BA2B99B16200540188 /* HomeModule.h in Headers */,
+				EB9749DA2B99B37B00540188 /* TransactionHistoryModule.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		EB9749B32B99B16200540188 /* HomeModule */ = {
+		EB9749D32B99B37B00540188 /* TransactionHistoryModule */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB9749BD2B99B16200540188 /* Build configuration list for PBXNativeTarget "HomeModule" */;
+			buildConfigurationList = EB9749DD2B99B37B00540188 /* Build configuration list for PBXNativeTarget "TransactionHistoryModule" */;
 			buildPhases = (
-				B1FA404EBA05E9C159AABC24 /* [CP] Check Pods Manifest.lock */,
-				EB9749AF2B99B16200540188 /* Headers */,
-				EB9749B02B99B16200540188 /* Sources */,
-				EB9749B12B99B16200540188 /* Frameworks */,
-				EB9749B22B99B16200540188 /* Resources */,
-				EBB97D872B99B6AB00B16518 /* Embed Frameworks */,
+				414B9F2D5855D5961C644597 /* [CP] Check Pods Manifest.lock */,
+				EB9749CF2B99B37B00540188 /* Headers */,
+				EB9749D02B99B37B00540188 /* Sources */,
+				EB9749D12B99B37B00540188 /* Frameworks */,
+				EB9749D22B99B37B00540188 /* Resources */,
+				EBB97D802B99B5A400B16518 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = HomeModule;
-			productName = HomeModule;
-			productReference = EB9749B42B99B16200540188 /* HomeModule.framework */;
+			name = TransactionHistoryModule;
+			productName = TransactionHistoryModule;
+			productReference = EB9749D42B99B37B00540188 /* TransactionHistoryModule.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EB9749AB2B99B16200540188 /* Project object */ = {
+		EB9749CB2B99B37B00540188 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
-					EB9749B32B99B16200540188 = {
+					EB9749D32B99B37B00540188 = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
 			};
-			buildConfigurationList = EB9749AE2B99B16200540188 /* Build configuration list for PBXProject "HomeModule" */;
+			buildConfigurationList = EB9749CE2B99B37B00540188 /* Build configuration list for PBXProject "TransactionHistoryModule" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -174,29 +182,30 @@
 				en,
 				Base,
 			);
-			mainGroup = EB9749AA2B99B16200540188;
-			productRefGroup = EB9749B52B99B16200540188 /* Products */;
+			mainGroup = EB9749CA2B99B37B00540188;
+			productRefGroup = EB9749D52B99B37B00540188 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EB9749B32B99B16200540188 /* HomeModule */,
+				EB9749D32B99B37B00540188 /* TransactionHistoryModule */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EB9749B22B99B16200540188 /* Resources */ = {
+		EB9749D22B99B37B00540188 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB9749C62B99B17500540188 /* HomeViewController.xib in Resources */,
+				EBED862C2B99B3EE00684F71 /* PaymentHistoryViewController.xib in Resources */,
+				EBED86302B99B3EE00684F71 /* PaymentHistoryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B1FA404EBA05E9C159AABC24 /* [CP] Check Pods Manifest.lock */ = {
+		414B9F2D5855D5961C644597 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -211,7 +220,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HomeModule-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-TransactionHistoryModule-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -221,22 +230,23 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EB9749B02B99B16200540188 /* Sources */ = {
+		EB9749D02B99B37B00540188 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB9749B92B99B16200540188 /* HomeModule.docc in Sources */,
-				EB9749C52B99B17500540188 /* HomeInteractor.swift in Sources */,
-				EB9749C72B99B17500540188 /* HomeViewController.swift in Sources */,
-				EB9749C82B99B17500540188 /* HomePresenter.swift in Sources */,
-				EB9749C92B99B17500540188 /* HomeRouter.swift in Sources */,
+				EBED862E2B99B3EE00684F71 /* PaymentHistoryViewController.swift in Sources */,
+				EBED862B2B99B3EE00684F71 /* PaymentHistoryPresenter.swift in Sources */,
+				EBED86312B99B3EE00684F71 /* PaymentHistoryRouter.swift in Sources */,
+				EB9749D92B99B37B00540188 /* TransactionHistoryModule.docc in Sources */,
+				EBED862D2B99B3EE00684F71 /* PaymentHistoryInteractor.swift in Sources */,
+				EBED862F2B99B3EE00684F71 /* PaymentHistoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		EB9749BB2B99B16200540188 /* Debug */ = {
+		EB9749DB2B99B37B00540188 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -302,7 +312,7 @@
 			};
 			name = Debug;
 		};
-		EB9749BC2B99B16200540188 /* Release */ = {
+		EB9749DC2B99B37B00540188 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -361,9 +371,9 @@
 			};
 			name = Release;
 		};
-		EB9749BE2B99B16200540188 /* Debug */ = {
+		EB9749DE2B99B37B00540188 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0FD41CCB8251612AE6EC07E /* Pods-HomeModule.debug.xcconfig */;
+			baseConfigurationReference = AC0BB48587AF58BA71D50B18 /* Pods-TransactionHistoryModule.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -385,7 +395,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.HomeModule;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.TransactionHistoryModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -395,9 +405,9 @@
 			};
 			name = Debug;
 		};
-		EB9749BF2B99B16200540188 /* Release */ = {
+		EB9749DF2B99B37B00540188 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4598D918B5462F62AFF2A6D /* Pods-HomeModule.release.xcconfig */;
+			baseConfigurationReference = A11F42F53FACC9E22AF01538 /* Pods-TransactionHistoryModule.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -419,7 +429,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.HomeModule;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.TransactionHistoryModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -432,25 +442,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EB9749AE2B99B16200540188 /* Build configuration list for PBXProject "HomeModule" */ = {
+		EB9749CE2B99B37B00540188 /* Build configuration list for PBXProject "TransactionHistoryModule" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EB9749BB2B99B16200540188 /* Debug */,
-				EB9749BC2B99B16200540188 /* Release */,
+				EB9749DB2B99B37B00540188 /* Debug */,
+				EB9749DC2B99B37B00540188 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB9749BD2B99B16200540188 /* Build configuration list for PBXNativeTarget "HomeModule" */ = {
+		EB9749DD2B99B37B00540188 /* Build configuration list for PBXNativeTarget "TransactionHistoryModule" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EB9749BE2B99B16200540188 /* Debug */,
-				EB9749BF2B99B16200540188 /* Release */,
+				EB9749DE2B99B37B00540188 /* Debug */,
+				EB9749DF2B99B37B00540188 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EB9749AB2B99B16200540188 /* Project object */;
+	rootObject = EB9749CB2B99B37B00540188 /* Project object */;
 }

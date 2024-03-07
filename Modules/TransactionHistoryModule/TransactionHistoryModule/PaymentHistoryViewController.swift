@@ -13,7 +13,7 @@ public class PaymentHistoryViewController: UIViewController {
     @IBOutlet weak var emptyViewLabel: UILabel!
     private let presenter: PaymentHistoryPresenter?
     private var isLoadingData = true
-    init(presenter: PaymentHistoryPresenter) {
+    public init(presenter: PaymentHistoryPresenter) {
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
     }
@@ -21,7 +21,7 @@ public class PaymentHistoryViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
@@ -50,11 +50,11 @@ public class PaymentHistoryViewController: UIViewController {
 }
 
 extension PaymentHistoryViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         presenter?.getPaymentData().count ?? 1
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "paymentHistoryCell", for: indexPath) as! PaymentHistoryTableViewCell
         if isLoadingData {
             cell.merchantLabel?.text = "..."

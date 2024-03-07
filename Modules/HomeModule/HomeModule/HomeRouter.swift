@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import TransactionModule
+import TransactionHistoryModule
 
 protocol HomeRouterProtocol {
     func goToHome() -> HomeViewController

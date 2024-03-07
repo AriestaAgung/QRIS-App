@@ -16,4 +16,7 @@
    <FileRef
       location = "group:Modules/TransactionModule/TransactionModule.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Modules/TransactionHistoryModule/TransactionHistoryModule.xcodeproj">
+   </FileRef>
 </Workspace>
