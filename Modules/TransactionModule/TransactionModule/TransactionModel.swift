@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct TransactionModel {
-    let transactionId: String?
-    let merchantName: String?
-    let amount: Double?
+public struct TransactionModel {
+    public let transactionId: String?
+    public let merchantName: String?
+    public let amount: Double?
 }

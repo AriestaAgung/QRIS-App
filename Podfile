@@ -21,6 +21,10 @@ target 'QRIS App' do
 
 end
 
+target 'HomeModule' do
+  project 'Modules/HomeModule/HomeModule'
+end
+
 target 'BalanceModule' do
   project 'Modules/BalanceModule/BalanceModule'
 end

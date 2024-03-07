@@ -7,8 +7,8 @@
 
 import Foundation
 import CoreData
-class TransactionProvider {
-    static let shared = TransactionProvider()
+public class TransactionProvider {
+    public static let shared = TransactionProvider()
     private lazy var persistentContainer: NSPersistentContainer = {
         let bundle = Bundle(identifier: "com.dcd.TransactionModule")
         let name = "TransactionDataModel"
@@ -29,7 +29,7 @@ class TransactionProvider {
     
     
     
-    func newTaskContext() -> NSManagedObjectContext {
+    public func newTaskContext() -> NSManagedObjectContext {
         let taskContext = persistentContainer.newBackgroundContext()
         taskContext.undoManager = nil
         

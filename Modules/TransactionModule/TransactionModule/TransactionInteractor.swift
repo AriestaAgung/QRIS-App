@@ -7,8 +7,8 @@
 
 import Foundation
 import CoreData
-class TransactionInteractor {
-    static let shared = TransactionInteractor(taskContext: TransactionProvider.shared.newTaskContext())
+public class TransactionInteractor {
+    public static let shared = TransactionInteractor(taskContext: TransactionProvider.shared.newTaskContext())
     private let entityName = "TransactionEntity"
     private let taskContext: NSManagedObjectContext?
     init(taskContext: NSManagedObjectContext?) {
@@ -17,7 +17,7 @@ class TransactionInteractor {
 }
 
 extension TransactionInteractor {
-    func getTransaction(completion: @escaping ([TransactionModel?]) -> Void) {
+    public func getTransaction(completion: @escaping ([TransactionModel?]) -> Void) {
         taskContext?.perform {
             let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: self.entityName)
             do {
@@ -43,7 +43,7 @@ extension TransactionInteractor {
         }
     }
     
-    func addTransaction(data: TransactionModel, completion: @escaping ([TransactionModel?]) -> Void) {
+    public func addTransaction(data: TransactionModel, completion: @escaping ([TransactionModel?]) -> Void) {
         guard let taskContext = taskContext else {return}
         taskContext.performAndWait {
             if let entity = NSEntityDescription.entity(forEntityName: self.entityName, in: taskContext) {

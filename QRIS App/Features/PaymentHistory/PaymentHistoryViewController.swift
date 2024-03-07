@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PaymentHistoryViewController: UIViewController {
+public class PaymentHistoryViewController: UIViewController {
 
     @IBOutlet weak var historyTableView: UITableView!
     @IBOutlet weak var emptyViewLabel: UILabel!

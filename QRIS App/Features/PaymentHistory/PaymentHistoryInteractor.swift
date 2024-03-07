@@ -6,13 +6,14 @@
 //
 
 import Foundation
+import TransactionModule
 
 protocol PaymentHistoryUseCase {
     func getTransaction(completion: @escaping ([TransactionModel?]) -> Void)
 }
 
-class PaymentHistoryInteractor: PaymentHistoryUseCase {
-    static let shared = PaymentHistoryInteractor()
+public class PaymentHistoryInteractor: PaymentHistoryUseCase {
+    public static let shared = PaymentHistoryInteractor()
     
     func getTransaction(completion: @escaping ([TransactionModel?]) -> Void) {
         TransactionInteractor.shared.getTransaction { transactions in

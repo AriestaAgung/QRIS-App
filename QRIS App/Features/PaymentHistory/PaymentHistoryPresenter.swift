@@ -11,7 +11,7 @@ protocol PaymentHistoryProtocol {
     func getPaymentData() -> [TransactionModel?]!
     func fetchPaymentData(completion: @escaping ([TransactionModel?]) -> Void)
 }
-class PaymentHistoryPresenter: PaymentHistoryProtocol {
+public class PaymentHistoryPresenter: PaymentHistoryProtocol {
     private var interactor: PaymentHistoryInteractor?
     private var router: PaymentHistoryRouter?
     private var transactionData: [TransactionModel?]! = []
@@ -19,10 +19,10 @@ class PaymentHistoryPresenter: PaymentHistoryProtocol {
         self.interactor = interactor
         self.router = router
     }
-    func getPaymentData() -> [TransactionModel?]! {
+    public func getPaymentData() -> [TransactionModel?]! {
         return transactionData
     }
-    func fetchPaymentData(completion: @escaping ([TransactionModel?]) -> Void) {
+    public func fetchPaymentData(completion: @escaping ([TransactionModel?]) -> Void) {
         interactor?.getTransaction { transactions in
             self.transactionData = transactions
             completion(transactions)
