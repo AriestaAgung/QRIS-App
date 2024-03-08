@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="QRIS_App" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="HomeModule" customModuleProvider="target">
             <connections>
                 <outlet property="addBalanceButton" destination="RKE-Xd-cCJ" id="fpy-ng-037"/>
                 <outlet property="balanceLabel" destination="GW5-NG-6hT" id="B9C-BK-v6H"/>
@@ -71,17 +71,24 @@
                         </button>
                     </subviews>
                 </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toa" translatesAutoresizingMaskIntoConstraints="NO" id="c46-6b-8vt">
+                    <rect key="frame" x="16" y="594" width="361" height="208"/>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="ZjF-bi-Kqs" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="LW8-WD-clc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="c46-6b-8vt" secondAttribute="trailing" constant="16" id="SRI-BR-ux1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="c46-6b-8vt" secondAttribute="bottom" constant="16" id="WKQ-HH-Wzf"/>
+                <constraint firstItem="c46-6b-8vt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="c1W-1h-zED"/>
                 <constraint firstItem="ZjF-bi-Kqs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yiv-VF-7p2"/>
             </constraints>
             <point key="canvasLocation" x="131" y="-11"/>
         </view>
     </objects>
     <resources>
+        <image name="toa" width="166" height="208"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
