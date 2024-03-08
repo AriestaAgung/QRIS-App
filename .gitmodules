@@ -1,12 +1,18 @@
 [submodule "Packages/BalanceCore"]
+	path = Packages/BalanceCore
 	url = https://github.com/AriestaAgung/BalanceCore-QRISApp.git
 [submodule "Packages/HomeModule"]
+	path = Packages/HomeModule
 	url = https://github.com/AriestaAgung/HomeModule-QRISApp.git
 [submodule "Packages/PaymentHistoryModule"]
+	path = Packages/PaymentHistoryModule
 	url = https://github.com/AriestaAgung/PaymentHistoryModule-QRISApp.git
 [submodule "Packages/PaymentModule"]
+	path = Packages/PaymentModule
 	url = https://github.com/AriestaAgung/PaymentModule-QRISApp.git
 [submodule "Packages/ScanQRModule"]
+	path = Packages/ScanQRModule
 	url = https://github.com/AriestaAgung/ScanQRModule-QRISApp.git
 [submodule "Packages/TransactionCore"]
+	path = Packages/TransactionCore
 	url = https://github.com/AriestaAgung/TransactionCore-QRISApp.git
