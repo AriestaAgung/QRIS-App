@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import TransactionCore
 
 protocol PaymentHistoryProtocol {
     func getPaymentData() -> [TransactionModel?]!

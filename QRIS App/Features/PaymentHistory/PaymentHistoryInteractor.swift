@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import TransactionCore
 
 protocol PaymentHistoryUseCase {
     func getTransaction(completion: @escaping ([TransactionModel?]) -> Void)
