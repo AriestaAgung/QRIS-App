@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import ScanQRModule
 
 protocol HomeRouterProtocol {
     func goToHome() -> HomeViewController
