@@ -17,6 +17,8 @@
 		EBCC7A4B2B9AF2B4004F7F39 /* ScanQRModule in Frameworks */ = {isa = PBXBuildFile; productRef = EBCC7A4A2B9AF2B4004F7F39 /* ScanQRModule */; };
 		EBCC7A4E2B9AF2C1004F7F39 /* TransactionCore in Frameworks */ = {isa = PBXBuildFile; productRef = EBCC7A4D2B9AF2C1004F7F39 /* TransactionCore */; };
 		EBCC7A512B9AF6C9004F7F39 /* PaymentHistoryModule in Frameworks */ = {isa = PBXBuildFile; productRef = EBCC7A502B9AF6C9004F7F39 /* PaymentHistoryModule */; };
+		EBCC7A542B9AFA71004F7F39 /* HomeModule in Frameworks */ = {isa = PBXBuildFile; productRef = EBCC7A532B9AFA71004F7F39 /* HomeModule */; };
+		EBCC7A572B9AFD5C004F7F39 /* HomeModule in Frameworks */ = {isa = PBXBuildFile; productRef = EBCC7A562B9AFD5C004F7F39 /* HomeModule */; };
 		EBD7FBC52B616A6800C850BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBC42B616A6800C850BA /* AppDelegate.swift */; };
 		EBD7FBC72B616A6800C850BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBC62B616A6800C850BA /* SceneDelegate.swift */; };
 		EBD7FBCE2B616A6A00C850BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD7FBCD2B616A6A00C850BA /* Assets.xcassets */; };
@@ -24,11 +26,6 @@
 		EBD7FBDC2B616A6A00C850BA /* QRIS_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBDB2B616A6A00C850BA /* QRIS_AppTests.swift */; };
 		EBD7FBE62B616A6A00C850BA /* QRIS_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBE52B616A6A00C850BA /* QRIS_AppUITests.swift */; };
 		EBD7FBE82B616A6A00C850BA /* QRIS_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBE72B616A6A00C850BA /* QRIS_AppUITestsLaunchTests.swift */; };
-		EBD7FBF92B61722100C850BA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBF72B61722100C850BA /* HomeViewController.swift */; };
-		EBD7FBFA2B61722100C850BA /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD7FBF82B61722100C850BA /* HomeViewController.xib */; };
-		EBD7FBFD2B61762700C850BA /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBFC2B61762600C850BA /* HomePresenter.swift */; };
-		EBD7FBFF2B61769500C850BA /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBFE2B61769500C850BA /* HomeInteractor.swift */; };
-		EBD7FC0E2B6183E100C850BA /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC0D2B6183E100C850BA /* HomeRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +51,7 @@
 		EBCC7A3F2B9ACF3F004F7F39 /* ScanQRModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ScanQRModule; sourceTree = "<group>"; };
 		EBCC7A402B9ACFA0004F7F39 /* PaymentModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PaymentModule; sourceTree = "<group>"; };
 		EBCC7A4F2B9AF5EB004F7F39 /* PaymentHistoryModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PaymentHistoryModule; sourceTree = "<group>"; };
+		EBCC7A522B9AF9D3004F7F39 /* HomeModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = HomeModule; sourceTree = "<group>"; };
 		EBD7FBC12B616A6800C850BA /* QRIS App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QRIS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD7FBC42B616A6800C850BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD7FBC62B616A6800C850BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,11 +63,6 @@
 		EBD7FBE12B616A6A00C850BA /* QRIS AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QRIS AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD7FBE52B616A6A00C850BA /* QRIS_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRIS_AppUITests.swift; sourceTree = "<group>"; };
 		EBD7FBE72B616A6A00C850BA /* QRIS_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRIS_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		EBD7FBF72B61722100C850BA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		EBD7FBF82B61722100C850BA /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		EBD7FBFC2B61762600C850BA /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
-		EBD7FBFE2B61769500C850BA /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
-		EBD7FC0D2B6183E100C850BA /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +72,12 @@
 			files = (
 				EBCC7A3E2B9ACDB8004F7F39 /* TransactionCore in Frameworks */,
 				EBCC7A4E2B9AF2C1004F7F39 /* TransactionCore in Frameworks */,
+				EBCC7A542B9AFA71004F7F39 /* HomeModule in Frameworks */,
 				EBCC7A512B9AF6C9004F7F39 /* PaymentHistoryModule in Frameworks */,
 				EBCC7A482B9AF2A3004F7F39 /* PaymentModule in Frameworks */,
 				EBCC7A4B2B9AF2B4004F7F39 /* ScanQRModule in Frameworks */,
 				EBCC7A432B9AF178004F7F39 /* PaymentModule in Frameworks */,
+				EBCC7A572B9AFD5C004F7F39 /* HomeModule in Frameworks */,
 				EBCC7A452B9AF178004F7F39 /* ScanQRModule in Frameworks */,
 				EBCC7A3A2B9AC8A1004F7F39 /* BalanceCore in Frameworks */,
 			);
@@ -108,6 +103,7 @@
 		EB3276712B9AC6C000E7EC73 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				EBCC7A522B9AF9D3004F7F39 /* HomeModule */,
 				EBCC7A4F2B9AF5EB004F7F39 /* PaymentHistoryModule */,
 				EBCC7A402B9ACFA0004F7F39 /* PaymentModule */,
 				EBCC7A3F2B9ACF3F004F7F39 /* ScanQRModule */,
@@ -187,21 +183,8 @@
 		EBD7FBF52B6171F000C850BA /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				EBD7FBF62B61720500C850BA /* Home */,
 			);
 			path = Features;
-			sourceTree = "<group>";
-		};
-		EBD7FBF62B61720500C850BA /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				EBD7FBF72B61722100C850BA /* HomeViewController.swift */,
-				EBD7FBF82B61722100C850BA /* HomeViewController.xib */,
-				EBD7FBFC2B61762600C850BA /* HomePresenter.swift */,
-				EBD7FBFE2B61769500C850BA /* HomeInteractor.swift */,
-				EBD7FC0D2B6183E100C850BA /* HomeRouter.swift */,
-			);
-			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +212,8 @@
 				EBCC7A4A2B9AF2B4004F7F39 /* ScanQRModule */,
 				EBCC7A4D2B9AF2C1004F7F39 /* TransactionCore */,
 				EBCC7A502B9AF6C9004F7F39 /* PaymentHistoryModule */,
+				EBCC7A532B9AFA71004F7F39 /* HomeModule */,
+				EBCC7A562B9AFD5C004F7F39 /* HomeModule */,
 			);
 			productName = "QRIS App";
 			productReference = EBD7FBC12B616A6800C850BA /* QRIS App.app */;
@@ -307,6 +292,7 @@
 				EBCC7A462B9AF2A3004F7F39 /* XCLocalSwiftPackageReference "Packages/PaymentModule" */,
 				EBCC7A492B9AF2B4004F7F39 /* XCLocalSwiftPackageReference "Packages/ScanQRModule" */,
 				EBCC7A4C2B9AF2C1004F7F39 /* XCLocalSwiftPackageReference "Packages/TransactionCore" */,
+				EBCC7A552B9AFD5C004F7F39 /* XCLocalSwiftPackageReference "Packages/HomeModule" */,
 			);
 			productRefGroup = EBD7FBC22B616A6800C850BA /* Products */;
 			projectDirPath = "";
@@ -328,7 +314,6 @@
 				EBCC7A412B9ACFA0004F7F39 /* PaymentModule in Resources */,
 				EBCC7A372B9AC7B4004F7F39 /* BalanceCore in Resources */,
 				EBD7FBCE2B616A6A00C850BA /* Assets.xcassets in Resources */,
-				EBD7FBFA2B61722100C850BA /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,10 +340,6 @@
 			files = (
 				EBD7FBC52B616A6800C850BA /* AppDelegate.swift in Sources */,
 				EBD7FBC72B616A6800C850BA /* SceneDelegate.swift in Sources */,
-				EBD7FBF92B61722100C850BA /* HomeViewController.swift in Sources */,
-				EBD7FBFF2B61769500C850BA /* HomeInteractor.swift in Sources */,
-				EBD7FBFD2B61762700C850BA /* HomePresenter.swift in Sources */,
-				EBD7FC0E2B6183E100C850BA /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,6 +704,10 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Packages/TransactionCore;
 		};
+		EBCC7A552B9AFD5C004F7F39 /* XCLocalSwiftPackageReference "Packages/HomeModule" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/HomeModule;
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -757,6 +742,14 @@
 		EBCC7A502B9AF6C9004F7F39 /* PaymentHistoryModule */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PaymentHistoryModule;
+		};
+		EBCC7A532B9AFA71004F7F39 /* HomeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HomeModule;
+		};
+		EBCC7A562B9AFD5C004F7F39 /* HomeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HomeModule;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

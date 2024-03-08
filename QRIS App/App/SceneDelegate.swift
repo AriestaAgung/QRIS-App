@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import HomeModule
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 

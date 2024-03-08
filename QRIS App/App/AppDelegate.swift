@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import HomeModule
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
