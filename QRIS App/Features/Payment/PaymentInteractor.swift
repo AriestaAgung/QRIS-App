@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import BalanceCore
 
 protocol PaymentUseCase {
     func pay(data: PaymentModel, completion: @escaping (BalanceModel?) -> Void)

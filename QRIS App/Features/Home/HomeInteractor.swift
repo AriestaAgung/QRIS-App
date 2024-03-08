@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import BalanceCore
 
 protocol HomeUseCase {
     func fetchBalance(completion: @escaping (BalanceModel?) -> Void)
