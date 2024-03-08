@@ -16,6 +16,7 @@
 		EBCC7A482B9AF2A3004F7F39 /* PaymentModule in Frameworks */ = {isa = PBXBuildFile; productRef = EBCC7A472B9AF2A3004F7F39 /* PaymentModule */; };
 		EBCC7A4B2B9AF2B4004F7F39 /* ScanQRModule in Frameworks */ = {isa = PBXBuildFile; productRef = EBCC7A4A2B9AF2B4004F7F39 /* ScanQRModule */; };
 		EBCC7A4E2B9AF2C1004F7F39 /* TransactionCore in Frameworks */ = {isa = PBXBuildFile; productRef = EBCC7A4D2B9AF2C1004F7F39 /* TransactionCore */; };
+		EBCC7A512B9AF6C9004F7F39 /* PaymentHistoryModule in Frameworks */ = {isa = PBXBuildFile; productRef = EBCC7A502B9AF6C9004F7F39 /* PaymentHistoryModule */; };
 		EBD7FBC52B616A6800C850BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBC42B616A6800C850BA /* AppDelegate.swift */; };
 		EBD7FBC72B616A6800C850BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBC62B616A6800C850BA /* SceneDelegate.swift */; };
 		EBD7FBCE2B616A6A00C850BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD7FBCD2B616A6A00C850BA /* Assets.xcassets */; };
@@ -28,13 +29,6 @@
 		EBD7FBFD2B61762700C850BA /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBFC2B61762600C850BA /* HomePresenter.swift */; };
 		EBD7FBFF2B61769500C850BA /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBFE2B61769500C850BA /* HomeInteractor.swift */; };
 		EBD7FC0E2B6183E100C850BA /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC0D2B6183E100C850BA /* HomeRouter.swift */; };
-		EBD7FC322B626BBB00C850BA /* PaymentHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC302B626BBB00C850BA /* PaymentHistoryViewController.swift */; };
-		EBD7FC332B626BBB00C850BA /* PaymentHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD7FC312B626BBB00C850BA /* PaymentHistoryViewController.xib */; };
-		EBD7FC352B626BD000C850BA /* PaymentHistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC342B626BD000C850BA /* PaymentHistoryPresenter.swift */; };
-		EBD7FC372B626BE800C850BA /* PaymentHistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC362B626BE800C850BA /* PaymentHistoryRouter.swift */; };
-		EBD7FC392B626C0000C850BA /* PaymentHistoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC382B626C0000C850BA /* PaymentHistoryInteractor.swift */; };
-		EBD7FC422B62783300C850BA /* PaymentHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FC402B62783300C850BA /* PaymentHistoryTableViewCell.swift */; };
-		EBD7FC432B62783400C850BA /* PaymentHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD7FC412B62783300C850BA /* PaymentHistoryTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +53,7 @@
 		EBCC7A3B2B9ACCA8004F7F39 /* TransactionCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = TransactionCore; sourceTree = "<group>"; };
 		EBCC7A3F2B9ACF3F004F7F39 /* ScanQRModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ScanQRModule; sourceTree = "<group>"; };
 		EBCC7A402B9ACFA0004F7F39 /* PaymentModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PaymentModule; sourceTree = "<group>"; };
+		EBCC7A4F2B9AF5EB004F7F39 /* PaymentHistoryModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PaymentHistoryModule; sourceTree = "<group>"; };
 		EBD7FBC12B616A6800C850BA /* QRIS App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QRIS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD7FBC42B616A6800C850BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD7FBC62B616A6800C850BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,13 +70,6 @@
 		EBD7FBFC2B61762600C850BA /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		EBD7FBFE2B61769500C850BA /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		EBD7FC0D2B6183E100C850BA /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
-		EBD7FC302B626BBB00C850BA /* PaymentHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryViewController.swift; sourceTree = "<group>"; };
-		EBD7FC312B626BBB00C850BA /* PaymentHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentHistoryViewController.xib; sourceTree = "<group>"; };
-		EBD7FC342B626BD000C850BA /* PaymentHistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryPresenter.swift; sourceTree = "<group>"; };
-		EBD7FC362B626BE800C850BA /* PaymentHistoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryRouter.swift; sourceTree = "<group>"; };
-		EBD7FC382B626C0000C850BA /* PaymentHistoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryInteractor.swift; sourceTree = "<group>"; };
-		EBD7FC402B62783300C850BA /* PaymentHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryTableViewCell.swift; sourceTree = "<group>"; };
-		EBD7FC412B62783300C850BA /* PaymentHistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentHistoryTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +79,7 @@
 			files = (
 				EBCC7A3E2B9ACDB8004F7F39 /* TransactionCore in Frameworks */,
 				EBCC7A4E2B9AF2C1004F7F39 /* TransactionCore in Frameworks */,
+				EBCC7A512B9AF6C9004F7F39 /* PaymentHistoryModule in Frameworks */,
 				EBCC7A482B9AF2A3004F7F39 /* PaymentModule in Frameworks */,
 				EBCC7A4B2B9AF2B4004F7F39 /* ScanQRModule in Frameworks */,
 				EBCC7A432B9AF178004F7F39 /* PaymentModule in Frameworks */,
@@ -119,6 +108,7 @@
 		EB3276712B9AC6C000E7EC73 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				EBCC7A4F2B9AF5EB004F7F39 /* PaymentHistoryModule */,
 				EBCC7A402B9ACFA0004F7F39 /* PaymentModule */,
 				EBCC7A3F2B9ACF3F004F7F39 /* ScanQRModule */,
 				EBCC7A3B2B9ACCA8004F7F39 /* TransactionCore */,
@@ -197,9 +187,6 @@
 		EBD7FBF52B6171F000C850BA /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				EBD7FC2F2B626BA900C850BA /* PaymentHistory */,
-				EBD7FC132B623B5B00C850BA /* Payment */,
-				EBD7FBFB2B61745400C850BA /* ScanQR */,
 				EBD7FBF62B61720500C850BA /* Home */,
 			);
 			path = Features;
@@ -215,42 +202,6 @@
 				EBD7FC0D2B6183E100C850BA /* HomeRouter.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		EBD7FBFB2B61745400C850BA /* ScanQR */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ScanQR;
-			sourceTree = "<group>";
-		};
-		EBD7FC132B623B5B00C850BA /* Payment */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Payment;
-			sourceTree = "<group>";
-		};
-		EBD7FC2F2B626BA900C850BA /* PaymentHistory */ = {
-			isa = PBXGroup;
-			children = (
-				EBD7FC3F2B62781F00C850BA /* Cell */,
-				EBD7FC302B626BBB00C850BA /* PaymentHistoryViewController.swift */,
-				EBD7FC312B626BBB00C850BA /* PaymentHistoryViewController.xib */,
-				EBD7FC342B626BD000C850BA /* PaymentHistoryPresenter.swift */,
-				EBD7FC362B626BE800C850BA /* PaymentHistoryRouter.swift */,
-				EBD7FC382B626C0000C850BA /* PaymentHistoryInteractor.swift */,
-			);
-			path = PaymentHistory;
-			sourceTree = "<group>";
-		};
-		EBD7FC3F2B62781F00C850BA /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				EBD7FC402B62783300C850BA /* PaymentHistoryTableViewCell.swift */,
-				EBD7FC412B62783300C850BA /* PaymentHistoryTableViewCell.xib */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +228,7 @@
 				EBCC7A472B9AF2A3004F7F39 /* PaymentModule */,
 				EBCC7A4A2B9AF2B4004F7F39 /* ScanQRModule */,
 				EBCC7A4D2B9AF2C1004F7F39 /* TransactionCore */,
+				EBCC7A502B9AF6C9004F7F39 /* PaymentHistoryModule */,
 			);
 			productName = "QRIS App";
 			productReference = EBD7FBC12B616A6800C850BA /* QRIS App.app */;
@@ -375,9 +327,7 @@
 				EBD7FBD12B616A6A00C850BA /* LaunchScreen.storyboard in Resources */,
 				EBCC7A412B9ACFA0004F7F39 /* PaymentModule in Resources */,
 				EBCC7A372B9AC7B4004F7F39 /* BalanceCore in Resources */,
-				EBD7FC432B62783400C850BA /* PaymentHistoryTableViewCell.xib in Resources */,
 				EBD7FBCE2B616A6A00C850BA /* Assets.xcassets in Resources */,
-				EBD7FC332B626BBB00C850BA /* PaymentHistoryViewController.xib in Resources */,
 				EBD7FBFA2B61722100C850BA /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,12 +355,7 @@
 			files = (
 				EBD7FBC52B616A6800C850BA /* AppDelegate.swift in Sources */,
 				EBD7FBC72B616A6800C850BA /* SceneDelegate.swift in Sources */,
-				EBD7FC422B62783300C850BA /* PaymentHistoryTableViewCell.swift in Sources */,
-				EBD7FC372B626BE800C850BA /* PaymentHistoryRouter.swift in Sources */,
-				EBD7FC322B626BBB00C850BA /* PaymentHistoryViewController.swift in Sources */,
-				EBD7FC352B626BD000C850BA /* PaymentHistoryPresenter.swift in Sources */,
 				EBD7FBF92B61722100C850BA /* HomeViewController.swift in Sources */,
-				EBD7FC392B626C0000C850BA /* PaymentHistoryInteractor.swift in Sources */,
 				EBD7FBFF2B61769500C850BA /* HomeInteractor.swift in Sources */,
 				EBD7FBFD2B61762700C850BA /* HomePresenter.swift in Sources */,
 				EBD7FC0E2B6183E100C850BA /* HomeRouter.swift in Sources */,
@@ -808,6 +753,10 @@
 		EBCC7A4D2B9AF2C1004F7F39 /* TransactionCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TransactionCore;
+		};
+		EBCC7A502B9AF6C9004F7F39 /* PaymentHistoryModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PaymentHistoryModule;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
