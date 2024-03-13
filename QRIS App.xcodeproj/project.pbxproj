@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB51B8072B9B1A5300191278 /* PaymentHistoryModule in Frameworks */ = {isa = PBXBuildFile; productRef = EB51B8062B9B1A5300191278 /* PaymentHistoryModule */; };
+		EB51B80D2B9B1A6C00191278 /* PaymentModule in Frameworks */ = {isa = PBXBuildFile; productRef = EB51B80C2B9B1A6C00191278 /* PaymentModule */; };
+		EB51B8102B9B1A7500191278 /* ScanQRModule in Frameworks */ = {isa = PBXBuildFile; productRef = EB51B80F2B9B1A7500191278 /* ScanQRModule */; };
+		EB51B8132B9B1A7D00191278 /* TransactionCore in Frameworks */ = {isa = PBXBuildFile; productRef = EB51B8122B9B1A7D00191278 /* TransactionCore */; };
+		EB51B8162B9B1A8700191278 /* BalanceCore in Frameworks */ = {isa = PBXBuildFile; productRef = EB51B8152B9B1A8700191278 /* BalanceCore */; };
+		EB51B8192B9B21F600191278 /* HomeModule in Frameworks */ = {isa = PBXBuildFile; productRef = EB51B8182B9B21F600191278 /* HomeModule */; };
 		EBCC7A372B9AC7B4004F7F39 /* BalanceCore in Resources */ = {isa = PBXBuildFile; fileRef = EBCC7A362B9AC7B4004F7F39 /* BalanceCore */; };
 		EBCC7A3A2B9AC8A1004F7F39 /* BalanceCore in Frameworks */ = {isa = PBXBuildFile; productRef = EBCC7A392B9AC8A1004F7F39 /* BalanceCore */; };
 		EBCC7A3E2B9ACDB8004F7F39 /* TransactionCore in Frameworks */ = {isa = PBXBuildFile; productRef = EBCC7A3D2B9ACDB8004F7F39 /* TransactionCore */; };
@@ -17,8 +23,6 @@
 		EBCC7A4B2B9AF2B4004F7F39 /* ScanQRModule in Frameworks */ = {isa = PBXBuildFile; productRef = EBCC7A4A2B9AF2B4004F7F39 /* ScanQRModule */; };
 		EBCC7A4E2B9AF2C1004F7F39 /* TransactionCore in Frameworks */ = {isa = PBXBuildFile; productRef = EBCC7A4D2B9AF2C1004F7F39 /* TransactionCore */; };
 		EBCC7A512B9AF6C9004F7F39 /* PaymentHistoryModule in Frameworks */ = {isa = PBXBuildFile; productRef = EBCC7A502B9AF6C9004F7F39 /* PaymentHistoryModule */; };
-		EBCC7A542B9AFA71004F7F39 /* HomeModule in Frameworks */ = {isa = PBXBuildFile; productRef = EBCC7A532B9AFA71004F7F39 /* HomeModule */; };
-		EBCC7A572B9AFD5C004F7F39 /* HomeModule in Frameworks */ = {isa = PBXBuildFile; productRef = EBCC7A562B9AFD5C004F7F39 /* HomeModule */; };
 		EBD7FBC52B616A6800C850BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBC42B616A6800C850BA /* AppDelegate.swift */; };
 		EBD7FBC72B616A6800C850BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7FBC62B616A6800C850BA /* SceneDelegate.swift */; };
 		EBD7FBCE2B616A6A00C850BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD7FBCD2B616A6A00C850BA /* Assets.xcassets */; };
@@ -72,14 +76,18 @@
 			files = (
 				EBCC7A3E2B9ACDB8004F7F39 /* TransactionCore in Frameworks */,
 				EBCC7A4E2B9AF2C1004F7F39 /* TransactionCore in Frameworks */,
-				EBCC7A542B9AFA71004F7F39 /* HomeModule in Frameworks */,
+				EB51B8132B9B1A7D00191278 /* TransactionCore in Frameworks */,
+				EB51B8192B9B21F600191278 /* HomeModule in Frameworks */,
 				EBCC7A512B9AF6C9004F7F39 /* PaymentHistoryModule in Frameworks */,
+				EB51B80D2B9B1A6C00191278 /* PaymentModule in Frameworks */,
 				EBCC7A482B9AF2A3004F7F39 /* PaymentModule in Frameworks */,
+				EB51B8102B9B1A7500191278 /* ScanQRModule in Frameworks */,
 				EBCC7A4B2B9AF2B4004F7F39 /* ScanQRModule in Frameworks */,
+				EB51B8162B9B1A8700191278 /* BalanceCore in Frameworks */,
 				EBCC7A432B9AF178004F7F39 /* PaymentModule in Frameworks */,
-				EBCC7A572B9AFD5C004F7F39 /* HomeModule in Frameworks */,
 				EBCC7A452B9AF178004F7F39 /* ScanQRModule in Frameworks */,
 				EBCC7A3A2B9AC8A1004F7F39 /* BalanceCore in Frameworks */,
+				EB51B8072B9B1A5300191278 /* PaymentHistoryModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +220,12 @@
 				EBCC7A4A2B9AF2B4004F7F39 /* ScanQRModule */,
 				EBCC7A4D2B9AF2C1004F7F39 /* TransactionCore */,
 				EBCC7A502B9AF6C9004F7F39 /* PaymentHistoryModule */,
-				EBCC7A532B9AFA71004F7F39 /* HomeModule */,
-				EBCC7A562B9AFD5C004F7F39 /* HomeModule */,
+				EB51B8062B9B1A5300191278 /* PaymentHistoryModule */,
+				EB51B80C2B9B1A6C00191278 /* PaymentModule */,
+				EB51B80F2B9B1A7500191278 /* ScanQRModule */,
+				EB51B8122B9B1A7D00191278 /* TransactionCore */,
+				EB51B8152B9B1A8700191278 /* BalanceCore */,
+				EB51B8182B9B21F600191278 /* HomeModule */,
 			);
 			productName = "QRIS App";
 			productReference = EBD7FBC12B616A6800C850BA /* QRIS App.app */;
@@ -288,11 +300,12 @@
 			);
 			mainGroup = EBD7FBB82B616A6800C850BA;
 			packageReferences = (
-				EBCC7A382B9AC8A1004F7F39 /* XCLocalSwiftPackageReference "Packages/BalanceCore" */,
-				EBCC7A462B9AF2A3004F7F39 /* XCLocalSwiftPackageReference "Packages/PaymentModule" */,
-				EBCC7A492B9AF2B4004F7F39 /* XCLocalSwiftPackageReference "Packages/ScanQRModule" */,
-				EBCC7A4C2B9AF2C1004F7F39 /* XCLocalSwiftPackageReference "Packages/TransactionCore" */,
-				EBCC7A552B9AFD5C004F7F39 /* XCLocalSwiftPackageReference "Packages/HomeModule" */,
+				EB51B8052B9B1A5300191278 /* XCLocalSwiftPackageReference "Packages/PaymentHistoryModule" */,
+				EB51B80B2B9B1A6C00191278 /* XCLocalSwiftPackageReference "Packages/PaymentModule" */,
+				EB51B80E2B9B1A7500191278 /* XCLocalSwiftPackageReference "Packages/ScanQRModule" */,
+				EB51B8112B9B1A7D00191278 /* XCLocalSwiftPackageReference "Packages/TransactionCore" */,
+				EB51B8142B9B1A8700191278 /* XCLocalSwiftPackageReference "Packages/BalanceCore" */,
+				EB51B8172B9B21F600191278 /* XCLocalSwiftPackageReference "Packages/HomeModule" */,
 			);
 			productRefGroup = EBD7FBC22B616A6800C850BA /* Products */;
 			projectDirPath = "";
@@ -520,7 +533,6 @@
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow QRIS App to use camera to scan QR?";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -550,7 +562,6 @@
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow QRIS App to use camera to scan QR?";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -688,29 +699,57 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		EBCC7A382B9AC8A1004F7F39 /* XCLocalSwiftPackageReference "Packages/BalanceCore" */ = {
+		EB51B8052B9B1A5300191278 /* XCLocalSwiftPackageReference "Packages/PaymentHistoryModule" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = Packages/BalanceCore;
+			relativePath = Packages/PaymentHistoryModule;
 		};
-		EBCC7A462B9AF2A3004F7F39 /* XCLocalSwiftPackageReference "Packages/PaymentModule" */ = {
+		EB51B80B2B9B1A6C00191278 /* XCLocalSwiftPackageReference "Packages/PaymentModule" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Packages/PaymentModule;
 		};
-		EBCC7A492B9AF2B4004F7F39 /* XCLocalSwiftPackageReference "Packages/ScanQRModule" */ = {
+		EB51B80E2B9B1A7500191278 /* XCLocalSwiftPackageReference "Packages/ScanQRModule" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Packages/ScanQRModule;
 		};
-		EBCC7A4C2B9AF2C1004F7F39 /* XCLocalSwiftPackageReference "Packages/TransactionCore" */ = {
+		EB51B8112B9B1A7D00191278 /* XCLocalSwiftPackageReference "Packages/TransactionCore" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Packages/TransactionCore;
 		};
-		EBCC7A552B9AFD5C004F7F39 /* XCLocalSwiftPackageReference "Packages/HomeModule" */ = {
+		EB51B8142B9B1A8700191278 /* XCLocalSwiftPackageReference "Packages/BalanceCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/BalanceCore;
+		};
+		EB51B8172B9B21F600191278 /* XCLocalSwiftPackageReference "Packages/HomeModule" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Packages/HomeModule;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		EB51B8062B9B1A5300191278 /* PaymentHistoryModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PaymentHistoryModule;
+		};
+		EB51B80C2B9B1A6C00191278 /* PaymentModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PaymentModule;
+		};
+		EB51B80F2B9B1A7500191278 /* ScanQRModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ScanQRModule;
+		};
+		EB51B8122B9B1A7D00191278 /* TransactionCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TransactionCore;
+		};
+		EB51B8152B9B1A8700191278 /* BalanceCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BalanceCore;
+		};
+		EB51B8182B9B21F600191278 /* HomeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HomeModule;
+		};
 		EBCC7A392B9AC8A1004F7F39 /* BalanceCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = BalanceCore;
@@ -742,14 +781,6 @@
 		EBCC7A502B9AF6C9004F7F39 /* PaymentHistoryModule */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PaymentHistoryModule;
-		};
-		EBCC7A532B9AFA71004F7F39 /* HomeModule */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = HomeModule;
-		};
-		EBCC7A562B9AFD5C004F7F39 /* HomeModule */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = HomeModule;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
